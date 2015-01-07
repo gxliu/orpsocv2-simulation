@@ -1,0 +1,17 @@
+#include "cpu-utils.h"
+
+int main() {
+  volatile int first,second,third;
+  volatile int i;
+
+  first = 0;
+  second = 1;
+  for (i=0;i<10;i++) {
+    third = first + second;
+    first = second;
+    second = third;
+    report(third);
+  }
+  report(0x8000000d);
+  exit(0);
+}

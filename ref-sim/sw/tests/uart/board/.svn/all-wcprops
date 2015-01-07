@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/sw/tests/uart/board
+END
+uart-echo.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/sw/tests/uart/board/uart-echo.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/sw/tests/uart/board/Makefile
+END

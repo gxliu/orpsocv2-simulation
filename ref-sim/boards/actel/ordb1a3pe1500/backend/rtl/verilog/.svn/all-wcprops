@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog
+END
+pll_xtal64_wb16.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal64_wb16.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/README
+END
+reset_buffer.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/reset_buffer.v
+END
+orpsoc_flashROM.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/orpsoc_flashROM.v
+END
+pll_xtal25_wb20.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal25_wb20.v
+END
+gbuf.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/gbuf.v
+END
+pll_xtal64_wb20.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal64_wb20.v
+END
+pll_xtal25_wb24.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal25_wb24.v
+END
+pll_xtal64_wb30.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal64_wb30.v
+END
+eth_pll.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/eth_pll.v
+END
+pll_xtal64_wb24.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/backend/rtl/verilog/pll_xtal64_wb24.v
+END

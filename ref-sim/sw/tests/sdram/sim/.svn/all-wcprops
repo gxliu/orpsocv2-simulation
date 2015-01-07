@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/426/openrisc/trunk/orpsocv2/sw/tests/sdram/sim
+END
+sdram-rows.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/sdram-rows.c
+END
+sdram-banks.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/sdram-banks.c
+END
+sdram-cols.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/426/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/sdram-cols.c
+END
+sdram-bankrows.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/sdram-bankrows.c
+END
+sdram.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/sdram.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/sdram/sim/Makefile
+END

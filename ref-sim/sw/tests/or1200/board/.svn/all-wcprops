@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/openrisc/!svn/ver/535/openrisc/trunk/orpsocv2/sw/tests/or1200/board
+END
+or1200-div.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-div.c
+END
+or1200-timerdemo.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/489/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-timerdemo.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/sw/tests/or1200/board/Makefile
+END
+or1200-rfemmu.S
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/535/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-rfemmu.S
+END
+or1200-mul.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-mul.c
+END
+or1200-configdetect.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/466/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-configdetect.c
+END
+or1200-mmu.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/sw/tests/or1200/board/or1200-mmu.c
+END

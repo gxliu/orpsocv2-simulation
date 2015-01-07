@@ -1,0 +1,83 @@
+10
+
+dir
+868
+http://opencores.org/ocsvn/openrisc/openrisc/trunk/orpsocv2
+http://opencores.org/ocsvn/openrisc
+
+
+
+2014-04-22T05:19:09.971303Z
+866
+stekern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04c7f051-eaf3-4997-922d-f29d9d8c0f3f
+
+doc
+dir
+
+scripts
+dir
+
+sim
+dir
+
+sw
+dir
+
+boards
+dir
+
+README
+file
+
+
+
+
+2015-01-04T12:40:36.503628Z
+157cad058e77721b5bf723db3e9b1eba
+2010-11-03T13:30:24.325722Z
+410
+julius
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+265
+
+bench
+dir
+
+rtl
+dir
+

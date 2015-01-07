@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ocsvn/openrisc/!svn/ver/662/openrisc/trunk/orpsocv2/scripts/make
+END
+Makefile-board-tops.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/558/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-tops.inc
+END
+Makefile-board-icarus.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/openrisc/!svn/ver/661/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-icarus.inc
+END
+Makefile-misc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/scripts/make/Makefile-misc.inc
+END
+Makefile-board-benchsrc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/558/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-benchsrc.inc
+END
+Makefile-rtltestrules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/scripts/make/Makefile-rtltestrules.inc
+END
+Makefile-board-definesparse.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-definesparse.inc
+END
+Makefile-sim-definesgen.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/scripts/make/Makefile-sim-definesgen.inc
+END
+Makefile-board-modelsim.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/660/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-modelsim.inc
+END
+Makefile-board-sw.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-sw.inc
+END
+Makefile-board-rtlmodules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/563/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-rtlmodules.inc
+END
+Makefile-board-simclean.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/662/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-simclean.inc
+END
+Makefile-simulators.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/scripts/make/Makefile-simulators.inc
+END
+Makefile-board-paths.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/563/openrisc/trunk/orpsocv2/scripts/make/Makefile-board-paths.inc
+END
+Makefile-swrules.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/scripts/make/Makefile-swrules.inc
+END

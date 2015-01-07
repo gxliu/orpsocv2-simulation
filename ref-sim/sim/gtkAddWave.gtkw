@@ -1,0 +1,63 @@
+[*]
+[*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
+[*] Tue Jan  6 20:18:24 2015
+[*]
+[dumpfile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/out/or1200-simple.vcd"
+[dumpfile_mtime] "Tue Jan  6 20:15:34 2015"
+[dumpfile_size] 68188464
+[savefile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/gtkAddWave.gtkw"
+[timestart] 3216765300
+[size] 1920 1124
+[pos] -1 -1
+*-16.132624 3216990000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] orpsoc_testbench.
+[treeopen] orpsoc_testbench.dut.
+[sst_width] 305
+[signals_width] 288
+[sst_expanded] 1
+[sst_vpaned_height] 328
+@28
+orpsoc_testbench.dut.or1200_top0.clk_i
+orpsoc_testbench.dut.or1200_top0.rst_i
+@22
+orpsoc_testbench.dut.wbm_i_or12_adr_o[31:0]
+orpsoc_testbench.dut.wbm_i_or12_dat_i[31:0]
+@28
+orpsoc_testbench.dut.wbm_i_or12_stb_o
+orpsoc_testbench.dut.wbm_i_or12_cyc_o
+orpsoc_testbench.dut.wbm_i_or12_ack_i
+orpsoc_testbench.dut.wbm_d_or12_we_o
+@200
+-
+@22
+orpsoc_testbench.dut.wbm_d_or12_adr_o[31:0]
+orpsoc_testbench.dut.wbm_d_or12_dat_o[31:0]
+orpsoc_testbench.dut.wbs_d_mc0_adr_i[31:0]
+orpsoc_testbench.dut.wbm_d_or12_dat_i[31:0]
+@28
+orpsoc_testbench.dut.wbm_d_or12_stb_o
+orpsoc_testbench.dut.wbm_d_or12_cyc_o
+orpsoc_testbench.dut.wbm_d_or12_ack_i
+@200
+-
+@22
+orpsoc_testbench.dut.wbs_d_mc0_adr_i[31:0]
+orpsoc_testbench.dut.wbs_d_mc0_dat_i[31:0]
+@28
+orpsoc_testbench.dut.wbs_d_mc0_stb_i
+orpsoc_testbench.dut.wbs_d_mc0_cyc_i
+orpsoc_testbench.dut.wbs_d_mc0_ack_o
+orpsoc_testbench.dut.wbs_d_mc0_we_i
+@200
+-
+@22
+orpsoc_testbench.monitor.or1200_check_execution.opcode[5:0]
+orpsoc_testbench.monitor.or1200_check_execution.rD_num[4:0]
+orpsoc_testbench.monitor.or1200_check_execution.rA_num[4:0]
+orpsoc_testbench.monitor.or1200_check_execution.rB_num[4:0]
+@25
+orpsoc_testbench.monitor.insns[31:0]
+@22
+orpsoc_testbench.vpi_dbg.test_text[199:0]
+[pattern_trace] 1
+[pattern_trace] 0

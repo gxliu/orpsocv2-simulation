@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/415/openrisc/trunk/orpsocv2/sw/tests/spi/board
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/415/openrisc/trunk/orpsocv2/sw/tests/spi/board/Makefile
+END
+simplespi-readflash.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/415/openrisc/trunk/orpsocv2/sw/tests/spi/board/simplespi-readflash.c
+END

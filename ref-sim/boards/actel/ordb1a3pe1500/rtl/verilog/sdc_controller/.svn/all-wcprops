@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller
+END
+sd_data_serial_host.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_data_serial_host.v
+END
+sd_controller_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_controller_wb.v
+END
+sd_crc_16.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_crc_16.v
+END
+sd_cmd_master.v
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_cmd_master.v
+END
+sd_rx_fifo_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_rx_fifo_tb.v
+END
+sd_data_master.v
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_data_master.v
+END
+sd_bd.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_bd.v
+END
+sdc_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sdc_controller.v
+END
+sd_fifo_rx_filler.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_fifo_rx_filler.v
+END
+sd_fifo_tx_filler.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_fifo_tx_filler.v
+END
+sd_rx_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_rx_fifo.v
+END
+sd_crc_7.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_crc_7.v
+END
+sd_tx_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_tx_fifo.v
+END
+sd_cmd_serial_host.v
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_cmd_serial_host.v
+END
+sd_clock_divider.v
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/ocsvn/openrisc/!svn/ver/544/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/sdc_controller/sd_clock_divider.v
+END

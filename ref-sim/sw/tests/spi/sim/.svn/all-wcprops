@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/tests/spi/sim
+END
+spi-interrupt.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/tests/spi/sim/spi-interrupt.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/tests/spi/sim/Makefile
+END
+spi-simple.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/tests/spi/sim/spi-simple.c
+END

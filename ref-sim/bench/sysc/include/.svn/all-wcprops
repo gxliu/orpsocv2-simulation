@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/862/openrisc/trunk/orpsocv2/bench/sysc/include
+END
+RspConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/RspConnection.h
+END
+TraceSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TraceSC.h
+END
+TapActionReset.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TapActionReset.h
+END
+OrpsocAccess.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/862/openrisc/trunk/orpsocv2/bench/sysc/include/OrpsocAccess.h
+END
+JtagDriverSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/JtagDriverSC.h
+END
+SprCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/SprCache.h
+END
+RspPacket.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/RspPacket.h
+END
+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/Utils.h
+END
+JtagSC_includes.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/JtagSC_includes.h
+END
+UartSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/500/openrisc/trunk/orpsocv2/bench/sysc/include/UartSC.h
+END
+MemCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/MemCache.h
+END
+elf.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/elf.h
+END
+ResetSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/ResetSC.h
+END
+MemoryLoad.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/MemoryLoad.h
+END
+GdbServerSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/GdbServerSC.h
+END
+OrpsocMain.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/OrpsocMain.h
+END
+TapStateMachine.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TapStateMachine.h
+END
+JtagSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/JtagSC.h
+END
+DebugUnitSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/DebugUnitSC.h
+END
+TapActionDRScan.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TapActionDRScan.h
+END
+coff.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/coff.h
+END
+MpHash.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/MpHash.h
+END
+Or1200MonitorSC.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/Or1200MonitorSC.h
+END
+TapAction.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TapAction.h
+END
+TapActionIRScan.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/462/openrisc/trunk/orpsocv2/bench/sysc/include/TapActionIRScan.h
+END

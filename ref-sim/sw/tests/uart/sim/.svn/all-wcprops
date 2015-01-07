@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/uart/sim
+END
+uart-interrupt.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/431/openrisc/trunk/orpsocv2/sw/tests/uart/sim/uart-interrupt.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/uart/sim/Makefile
+END
+uart-interruptloopback.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/uart/sim/uart-interruptloopback.c
+END
+uart-simple.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/431/openrisc/trunk/orpsocv2/sw/tests/uart/sim/uart-simple.c
+END

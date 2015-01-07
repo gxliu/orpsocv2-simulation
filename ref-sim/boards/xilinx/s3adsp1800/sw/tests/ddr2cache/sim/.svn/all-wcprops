@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ddr2cache/sim
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ddr2cache/sim/Makefile
+END
+ddr2cache-1.S
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ddr2cache/sim/ddr2cache-1.S
+END
+ddr2cache-2.S
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ddr2cache/sim/ddr2cache-2.S
+END

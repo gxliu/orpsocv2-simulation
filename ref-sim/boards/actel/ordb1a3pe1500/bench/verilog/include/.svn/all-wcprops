@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/bench/verilog/include
+END
+orpsoc-testbench-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/bench/verilog/include/orpsoc-testbench-defines.v
+END
+synthesis-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/bench/verilog/include/synthesis-defines.v
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/bench/verilog/include/timescale.v
+END
+eth_stim.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/bench/verilog/include/eth_stim.v
+END

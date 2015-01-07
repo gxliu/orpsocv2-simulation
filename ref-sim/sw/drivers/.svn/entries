@@ -1,0 +1,46 @@
+10
+
+dir
+868
+http://opencores.org/ocsvn/openrisc/openrisc/trunk/orpsocv2/sw/drivers
+http://opencores.org/ocsvn/openrisc
+
+
+
+2013-03-10T23:43:14.692251Z
+857
+julius
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04c7f051-eaf3-4997-922d-f29d9d8c0f3f
+
+uart
+dir
+
+ethmac
+dir
+
+i2c_master_slave
+dir
+
+simple-spi
+dir
+
+cfi-ctrl
+dir
+
+or1200
+dir
+

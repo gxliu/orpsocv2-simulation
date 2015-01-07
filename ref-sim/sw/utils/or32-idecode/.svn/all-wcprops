@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/openrisc/!svn/ver/673/openrisc/trunk/orpsocv2/sw/utils/or32-idecode
+END
+ansidecl.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/ansidecl.h
+END
+example_input
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/example_input
+END
+or32.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/or32.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/Makefile
+END
+bfd.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/bfd.h
+END
+dis-asm.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/dis-asm.h
+END
+or32-dis.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/673/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/or32-dis.c
+END
+or32-opc.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/673/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/or32-opc.c
+END
+symcat.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/or32-idecode/symcat.h
+END

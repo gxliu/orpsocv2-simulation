@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/656/openrisc/trunk/orpsocv2/sw/drivers/cfi-ctrl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/drivers/cfi-ctrl/Makefile
+END
+cfi_ctrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/656/openrisc/trunk/orpsocv2/sw/drivers/cfi-ctrl/cfi_ctrl.c
+END

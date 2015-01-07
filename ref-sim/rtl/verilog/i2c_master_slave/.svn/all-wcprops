@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/545/openrisc/trunk/orpsocv2/rtl/verilog/i2c_master_slave
+END
+i2c_master_byte_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/i2c_master_slave/i2c_master_byte_ctrl.v
+END
+i2c_master_slave.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/i2c_master_slave/i2c_master_slave.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/i2c_master_slave/README
+END
+i2c_master_bit_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/545/openrisc/trunk/orpsocv2/rtl/verilog/i2c_master_slave/i2c_master_bit_ctrl.v
+END

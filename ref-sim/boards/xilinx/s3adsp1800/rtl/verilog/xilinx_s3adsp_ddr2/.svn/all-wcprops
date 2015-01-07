@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2
+END
+s3adsp_ddr2_dqs_delay.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_dqs_delay.v
+END
+s3adsp_ddr2_fifo_0_wr_en_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_fifo_0_wr_en_0.v
+END
+s3adsp_ddr2_infrastructure_iobs_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_infrastructure_iobs_0.v
+END
+s3adsp_ddr2_iobs_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_iobs_0.v
+END
+xilinx_s3adsp_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/xilinx_s3adsp_ddr2.v
+END
+s3adsp_ddr2_fifo_1_wr_en_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_fifo_1_wr_en_0.v
+END
+s3adsp_ddr2_rd_gray_cntr.v
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_rd_gray_cntr.v
+END
+s3adsp_ddr2_controller_iobs_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_controller_iobs_0.v
+END
+s3adsp_ddr2_infrastructure.v
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_infrastructure.v
+END
+s3adsp_ddr2_data_path_iobs_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_data_path_iobs_0.v
+END
+s3adsp_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2.v
+END
+s3adsp_ddr2_cal_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_cal_top.v
+END
+s3adsp_ddr2_top_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_top_0.v
+END
+s3adsp_ddr2_data_read_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_data_read_0.v
+END
+s3adsp_ddr2_s3_dqs_iob.v
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_s3_dqs_iob.v
+END
+s3adsp_ddr2_data_read_controller_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_data_read_controller_0.v
+END
+xilinx_s3adsp_ddr2_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/xilinx_s3adsp_ddr2_if.v
+END
+s3adsp_ddr2_ram8d_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_ram8d_0.v
+END
+s3adsp_ddr2_clk_dcm.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_clk_dcm.v
+END
+s3adsp_ddr2_tap_dly.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_tap_dly.v
+END
+s3adsp_ddr2_s3_dm_iob.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_s3_dm_iob.v
+END
+s3adsp_ddr2_wr_gray_cntr.v
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_wr_gray_cntr.v
+END
+s3adsp_ddr2_cal_ctl.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_cal_ctl.v
+END
+s3adsp_ddr2_data_write_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_data_write_0.v
+END
+s3adsp_ddr2_controller_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_controller_0.v
+END
+s3adsp_ddr2_infrastructure_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_infrastructure_top.v
+END
+s3adsp_ddr2_s3_dq_iob.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_s3_dq_iob.v
+END
+s3adsp_ddr2_cache.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_cache.v
+END
+s3adsp_ddr2_data_path_0.v
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/xilinx_s3adsp_ddr2/s3adsp_ddr2_data_path_0.v
+END

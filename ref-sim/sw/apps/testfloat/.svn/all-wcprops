@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat
+END
+systflags.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systflags.h
+END
+random.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/random.h
+END
+testFunction.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/testFunction.c
+END
+milieu.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/milieu.h
+END
+systmodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systmodes.c
+END
+testFunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/testFunction.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/sw/apps/testfloat/Makefile
+END
+testLoops.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/testLoops.c
+END
+systfloat.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systfloat.h
+END
+testCases.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/testCases.c
+END
+systmodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systmodes.h
+END
+writeHex.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/writeHex.c
+END
+softfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/softfloat.c
+END
+testLoops.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/testLoops.h
+END
+testsoftfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/testsoftfloat.c
+END
+testCases.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/testCases.h
+END
+writeHex.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/writeHex.h
+END
+testfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/testfloat.c
+END
+softfloat.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/softfloat.h
+END
+systfloat.S
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systfloat.S
+END
+slowfloat.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/slowfloat.c
+END
+or1k-gcc.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/or1k-gcc.h
+END
+fail.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/fail.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/README
+END
+systflags.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/systflags.c
+END
+slowfloat.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/slowfloat.h
+END
+random.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/apps/testfloat/random.c
+END
+fail.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/apps/testfloat/fail.h
+END

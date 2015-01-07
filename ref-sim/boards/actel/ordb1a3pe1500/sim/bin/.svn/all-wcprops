@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sim/bin
+END
+ordb1a3pe1500-or1ksim.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/475/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sim/bin/ordb1a3pe1500-or1ksim.cfg
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sim/bin/Makefile
+END

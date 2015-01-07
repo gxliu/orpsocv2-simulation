@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/858/openrisc/trunk/orpsocv2/sw/tests/or1200/sim
+END
+or1200-basic.S
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-basic.S
+END
+or1200-ov.S
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/803/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-ov.S
+END
+or1200-intsyscall.S
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-intsyscall.S
+END
+or1200-float.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-float.c
+END
+or1200-ticksyscall.S
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/671/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-ticksyscall.S
+END
+or1200-dsxinsn.S
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/858/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-dsxinsn.S
+END
+or1200-ffl1.S
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/499/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-ffl1.S
+END
+or1200-except.S
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/671/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-except.S
+END
+or1200-tick.S
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-tick.S
+END
+or1200-linkregtest.S
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-linkregtest.S
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/Makefile
+END
+or1200-rfemmu.S
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/535/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-rfemmu.S
+END
+or1200-range.S
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/805/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-range.S
+END
+or1200-dsx.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/807/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-dsx.S
+END
+or1200-mac.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/499/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-mac.S
+END
+or1200-ext.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/801/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-ext.S
+END
+or1200-div.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/435/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-div.c
+END
+or1200-cbasic.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/475/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-cbasic.c
+END
+or1200-fp.S
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-fp.S
+END
+or1200-dctest.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-dctest.c
+END
+or1200-sf.S
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/672/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-sf.S
+END
+or1200-maci.S
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-maci.S
+END
+or1200-simple.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-simple.c
+END
+or1200-cy.S
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-cy.S
+END
+or1200-rfe.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/535/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-rfe.S
+END
+or1200-mul.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/435/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-mul.c
+END
+or1200-mmu.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/tests/or1200/sim/or1200-mmu.c
+END

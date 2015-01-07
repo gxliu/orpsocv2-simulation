@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/doc
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/openrisc/!svn/ver/417/openrisc/trunk/orpsocv2/doc/install-sh
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/Makefile.in
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/configure.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/Makefile.am
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ocsvn/openrisc/!svn/ver/417/openrisc/trunk/orpsocv2/doc/missing
+END
+fdl-1.2.texi
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/fdl-1.2.texi
+END
+texinfo.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/417/openrisc/trunk/orpsocv2/doc/texinfo.tex
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/aclocal.m4
+END
+config.texi
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/doc/config.texi
+END
+orpsoc.texi
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/doc/orpsoc.texi
+END

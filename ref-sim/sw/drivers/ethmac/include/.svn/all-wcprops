@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/drivers/ethmac/include
+END
+eth-phy-mii.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/sw/drivers/ethmac/include/eth-phy-mii.h
+END
+ethmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/drivers/ethmac/include/ethmac.h
+END

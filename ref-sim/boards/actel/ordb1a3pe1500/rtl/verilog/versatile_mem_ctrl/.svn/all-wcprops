@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/README
+END
+versatile_mem_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/openrisc/!svn/ver/411/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/versatile_mem_ctrl.v
+END

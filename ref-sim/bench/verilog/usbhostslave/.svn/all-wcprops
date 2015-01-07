@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave
+END
+getPacket_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/getPacket_simlib.v
+END
+dpMem_dc_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/dpMem_dc_simlib.v
+END
+SOFTransmit_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/SOFTransmit_simlib.v
+END
+usb_slave_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usb_slave_tb.v
+END
+processRxByte_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/processRxByte_simlib.v
+END
+slaveSendPacket_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/slaveSendPacket_simlib.v
+END
+fifoMux_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/fifoMux_simlib.v
+END
+SIETransmitter_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/SIETransmitter_simlib.v
+END
+processTxByte_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/processTxByte_simlib.v
+END
+slavecontroller_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/slavecontroller_simlib.v
+END
+speedCtrlMux_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/speedCtrlMux_simlib.v
+END
+usbhostslave_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbhostslave_simlib.v
+END
+writeUSBWireData_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/writeUSBWireData_simlib.v
+END
+sendPacketCheckPreamble_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/sendPacketCheckPreamble_simlib.v
+END
+usbhost_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbhost_simlib.v
+END
+wishBoneBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/wishBoneBI_simlib.v
+END
+sendPacketArbiter_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/sendPacketArbiter_simlib.v
+END
+usbHostSlave_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbHostSlave_h.v
+END
+lineControlUpdate_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/lineControlUpdate_simlib.v
+END
+RxFifo_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/RxFifo_simlib.v
+END
+usbSlaveControl_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbSlaveControl_h.v
+END
+SCTxPortArbiter_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/SCTxPortArbiter_simlib.v
+END
+TxFifo_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/TxFifo_simlib.v
+END
+slaveRxStatusMonitor_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/slaveRxStatusMonitor_simlib.v
+END
+usbSerialInterfaceEngine_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbSerialInterfaceEngine_simlib.v
+END
+wishBoneBus_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/wishBoneBus_h.v
+END
+rxStatusMonitor_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/rxStatusMonitor_simlib.v
+END
+fifoRTL_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/fifoRTL_simlib.v
+END
+SIEReceiver_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/SIEReceiver_simlib.v
+END
+slaveDirectControl_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/slaveDirectControl_simlib.v
+END
+readUSBWireData_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/readUSBWireData_simlib.v
+END
+usb_hostslave_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usb_hostslave_tb.v
+END
+RxfifoBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/RxfifoBI_simlib.v
+END
+usbSerialInterfaceEngine_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbSerialInterfaceEngine_h.v
+END
+TxfifoBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/TxfifoBI_simlib.v
+END
+directControl_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/directControl_simlib.v
+END
+hostSlaveMuxBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/hostSlaveMuxBI_simlib.v
+END
+endpMux_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/endpMux_simlib.v
+END
+sendPacket_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/sendPacket_simlib.v
+END
+hostcontroller_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/hostcontroller_simlib.v
+END
+updateCRC16_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/updateCRC16_simlib.v
+END
+HCTxPortArbiter_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/HCTxPortArbiter_simlib.v
+END
+usbslave_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbslave_simlib.v
+END
+usbSlaveControl_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbSlaveControl_simlib.v
+END
+processRxBit_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/processRxBit_simlib.v
+END
+usbHostControl_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbHostControl_simlib.v
+END
+SOFController_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/SOFController_simlib.v
+END
+usbConstants_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbConstants_h.v
+END
+updateCRC5_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/updateCRC5_simlib.v
+END
+USBSlaveControlBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/USBSlaveControlBI_simlib.v
+END
+usbHostControl_h.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/usbHostControl_h.v
+END
+hostSlaveMux_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/hostSlaveMux_simlib.v
+END
+slaveGetPacket_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/slaveGetPacket_simlib.v
+END
+USBHostControlBI_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/USBHostControlBI_simlib.v
+END
+wb_master_model.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/wb_master_model.v
+END
+USBTxWireArbiter_simlib.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/bench/verilog/usbhostslave/USBTxWireArbiter_simlib.v
+END

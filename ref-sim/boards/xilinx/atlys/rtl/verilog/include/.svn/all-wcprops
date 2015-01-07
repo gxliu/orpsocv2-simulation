@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/openrisc/!svn/ver/854/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include
+END
+uart_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/uart_defines.v
+END
+dbg_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/dbg_defines.v
+END
+xilinx_ddr2_params.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/xilinx_ddr2_params.v
+END
+ethmac_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/ethmac_defines.v
+END
+i2c_master_slave_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/i2c_master_slave_defines.v
+END
+dbg_cpu_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/dbg_cpu_defines.v
+END
+or1200_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/854/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/or1200_defines.v
+END
+orpsoc-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/orpsoc-defines.v
+END
+dbg_wb_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/dbg_wb_defines.v
+END
+tap_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/tap_defines.v
+END
+orpsoc-params.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/include/orpsoc-params.v
+END

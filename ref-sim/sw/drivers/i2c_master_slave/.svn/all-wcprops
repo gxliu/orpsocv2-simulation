@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/545/openrisc/trunk/orpsocv2/sw/drivers/i2c_master_slave
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/403/openrisc/trunk/orpsocv2/sw/drivers/i2c_master_slave/Makefile
+END
+i2c_master_slave.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/545/openrisc/trunk/orpsocv2/sw/drivers/i2c_master_slave/i2c_master_slave.c
+END

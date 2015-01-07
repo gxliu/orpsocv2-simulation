@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/smii
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/smii/README
+END
+smii_sync.v
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/smii/smii_sync.v
+END
+smii_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/smii/smii_if.v
+END
+smii.v
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/smii/smii.v
+END

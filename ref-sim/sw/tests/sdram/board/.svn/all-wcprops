@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/openrisc/!svn/ver/426/openrisc/trunk/orpsocv2/sw/tests/sdram/board
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/426/openrisc/trunk/orpsocv2/sw/tests/sdram/board/Makefile
+END
+sdram-rows.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/426/openrisc/trunk/orpsocv2/sw/tests/sdram/board/sdram-rows.c
+END

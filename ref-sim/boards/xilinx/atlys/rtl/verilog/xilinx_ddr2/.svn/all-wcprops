@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/677/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2
+END
+infrastructure.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/infrastructure.v
+END
+iodrp_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/iodrp_controller.v
+END
+mcb_ui_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/mcb_ui_top.v
+END
+iodrp_mcb_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/iodrp_mcb_controller.v
+END
+memc_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/memc_wrapper.v
+END
+mcb_soft_calibration.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/mcb_soft_calibration.v
+END
+xilinx_ddr2_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/677/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/xilinx_ddr2_if.v
+END
+mcb_soft_calibration_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/mcb_soft_calibration_top.v
+END
+xilinx_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/xilinx_ddr2.v
+END
+ddr2_mig.v
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/ddr2_mig.v
+END
+xilinx_ddr2_if_cache.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/xilinx_ddr2_if_cache.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/README
+END
+mcb_raw_wrapper.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/627/openrisc/trunk/orpsocv2/boards/xilinx/atlys/rtl/verilog/xilinx_ddr2/mcb_raw_wrapper.v
+END

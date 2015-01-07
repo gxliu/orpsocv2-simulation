@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/openrisc/!svn/ver/364/openrisc/trunk/orpsocv2/rtl/verilog/uart16550
+END
+uart_tfifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_tfifo.v
+END
+uart_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_wb.v
+END
+uart_transmitter.v
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_transmitter.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/README
+END
+uart_sync_flops.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_sync_flops.v
+END
+uart_regs.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_regs.v
+END
+uart16550.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart16550.v
+END
+raminfr.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/raminfr.v
+END
+uart_debug_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_debug_if.v
+END
+uart_receiver.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_receiver.v
+END
+uart_rfifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/uart16550/uart_rfifo.v
+END

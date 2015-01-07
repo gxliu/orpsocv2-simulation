@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/tests/cfi_ctrl/board
+END
+cfi_ctrl-readid.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/tests/cfi_ctrl/board/cfi_ctrl-readid.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/tests/cfi_ctrl/board/Makefile
+END
+cfi_ctrl-simple.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/tests/cfi_ctrl/board/cfi_ctrl-simple.c
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/usbhostslave/sim
+END
+usbhostslave-hostsimple.c
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/usbhostslave/sim/usbhostslave-hostsimple.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/usbhostslave/sim/Makefile
+END
+usbhostslave-slavesimple.c
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/usbhostslave/sim/usbhostslave-slavesimple.c
+END

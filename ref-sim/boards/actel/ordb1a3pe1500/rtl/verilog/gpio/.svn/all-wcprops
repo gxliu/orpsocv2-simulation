@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/gpio
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/gpio/README
+END
+gpio.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/gpio/gpio.v
+END

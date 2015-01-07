@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/sw/apps/spiflash
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/465/openrisc/trunk/orpsocv2/sw/apps/spiflash/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/openrisc/!svn/ver/505/openrisc/trunk/orpsocv2/sw/apps/spiflash/README
+END
+spiflash-program.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/542/openrisc/trunk/orpsocv2/sw/apps/spiflash/spiflash-program.c
+END
+spiflash-program.ld
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/528/openrisc/trunk/orpsocv2/sw/apps/spiflash/spiflash-program.ld
+END

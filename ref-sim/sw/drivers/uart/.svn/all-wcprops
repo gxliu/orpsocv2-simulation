@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/drivers/uart
+END
+uart.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/drivers/uart/uart.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/drivers/uart/Makefile
+END

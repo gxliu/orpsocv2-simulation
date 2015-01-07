@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/634/openrisc/trunk/orpsocv2/boards/xilinx/atlys/syn/xst/coregen
+END
+xilinx_ddr2_if_cache.xco
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/ocsvn/openrisc/!svn/ver/634/openrisc/trunk/orpsocv2/boards/xilinx/atlys/syn/xst/coregen/xilinx_ddr2_if_cache.xco
+END
+coregen.cgp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/ocsvn/openrisc/!svn/ver/634/openrisc/trunk/orpsocv2/boards/xilinx/atlys/syn/xst/coregen/coregen.cgp
+END

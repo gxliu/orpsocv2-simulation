@@ -1,0 +1,40 @@
+10
+
+dir
+868
+http://opencores.org/ocsvn/openrisc/openrisc/trunk/orpsocv2/boards/xilinx
+http://opencores.org/ocsvn/openrisc
+
+
+
+2014-04-22T05:19:09.971303Z
+866
+stekern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04c7f051-eaf3-4997-922d-f29d9d8c0f3f
+
+s3adsp1800
+dir
+
+backend
+dir
+
+atlys
+dir
+
+ml501
+dir
+

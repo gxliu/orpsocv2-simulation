@@ -1,0 +1,9 @@
+
+* Starting simulation of ORPSoC RTL.
+* Test: or1200-basic
+
+* VCD in ../out/or1200-basic.vcd
+
+VCD info: dumpfile ../out/or1200-basic.vcd opened for output.
+report(0x8000fffb);
+exit(0)

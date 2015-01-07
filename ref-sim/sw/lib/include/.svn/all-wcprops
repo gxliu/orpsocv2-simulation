@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/lib/include
+END
+printf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ocsvn/openrisc/!svn/ver/485/openrisc/trunk/orpsocv2/sw/lib/include/printf.h
+END
+lib-utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/lib/include/lib-utils.h
+END
+cpu-utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/393/openrisc/trunk/orpsocv2/sw/lib/include/cpu-utils.h
+END

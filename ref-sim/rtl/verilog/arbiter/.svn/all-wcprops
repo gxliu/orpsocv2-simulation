@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/506/openrisc/trunk/orpsocv2/rtl/verilog/arbiter
+END
+arbiter_bytebus.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/506/openrisc/trunk/orpsocv2/rtl/verilog/arbiter/arbiter_bytebus.v
+END
+arbiter_dbus.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/362/openrisc/trunk/orpsocv2/rtl/verilog/arbiter/arbiter_dbus.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/rtl/verilog/arbiter/README
+END
+arbiter_ibus.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/arbiter/arbiter_ibus.v
+END

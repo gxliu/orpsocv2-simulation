@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ocsvn/openrisc/!svn/ver/479/openrisc/trunk/orpsocv2/sw/bootrom
+END
+bootrom.S
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/openrisc/!svn/ver/415/openrisc/trunk/orpsocv2/sw/bootrom/bootrom.S
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/479/openrisc/trunk/orpsocv2/sw/bootrom/Makefile
+END

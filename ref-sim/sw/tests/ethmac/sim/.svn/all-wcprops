@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim
+END
+ethmac-rx.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/ethmac-rx.c
+END
+ethmac-rxtxoverflow.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/ethmac-rxtxoverflow.c
+END
+ethmac-tx.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/ethmac-tx.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/Makefile
+END
+ethmac-rxtxcallresponse.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/ethmac-rxtxcallresponse.c
+END
+ethmac-rxtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/sw/tests/ethmac/sim/ethmac-rxtx.c
+END

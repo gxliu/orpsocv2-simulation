@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/apps/cfi_ctrl_programmer
+END
+cfi_ctrl_programmer.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/apps/cfi_ctrl_programmer/cfi_ctrl_programmer.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/apps/cfi_ctrl_programmer/Makefile
+END
+cfi_ctrl_programmer.ld
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/apps/cfi_ctrl_programmer/cfi_ctrl_programmer.ld
+END

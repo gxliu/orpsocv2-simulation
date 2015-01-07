@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ocsvn/openrisc/!svn/ver/673/openrisc/trunk/orpsocv2/sw/utils
+END
+bin2flimg.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/bin2flimg.c
+END
+bin2binsizeword.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/349/openrisc/trunk/orpsocv2/sw/utils/bin2binsizeword.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/openrisc/!svn/ver/349/openrisc/trunk/orpsocv2/sw/utils/Makefile
+END
+binlog2readable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/63/openrisc/trunk/orpsocv2/sw/utils/binlog2readable.cpp
+END
+bin2c.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/bin2c.c
+END
+bin2hex.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/415/openrisc/trunk/orpsocv2/sw/utils/bin2hex.c
+END
+bin2vmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/67/openrisc/trunk/orpsocv2/sw/utils/bin2vmem.c
+END
+bin2vlogarray.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/sw/utils/bin2vlogarray.c
+END
+loader.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/loader.c
+END
+bin2srec.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/openrisc/!svn/ver/6/openrisc/trunk/orpsocv2/sw/utils/bin2srec.c
+END

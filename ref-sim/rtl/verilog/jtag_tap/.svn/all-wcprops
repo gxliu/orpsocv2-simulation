@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/jtag_tap
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/rtl/verilog/jtag_tap/README
+END
+jtag_tap.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/jtag_tap/jtag_tap.v
+END

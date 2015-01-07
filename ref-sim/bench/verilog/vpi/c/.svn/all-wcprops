@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ocsvn/openrisc/!svn/ver/493/openrisc/trunk/orpsocv2/bench/verilog/vpi/c
+END
+rsp-rtl_sim.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/rsp-rtl_sim.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/493/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/Makefile
+END
+gdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/gdb.c
+END
+rsp-rtl_sim.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/rsp-rtl_sim.h
+END
+gdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ocsvn/openrisc/!svn/ver/49/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/gdb.h
+END
+rsp-vpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/rsp-vpi.h
+END
+jp_vpi.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/397/openrisc/trunk/orpsocv2/bench/verilog/vpi/c/jp_vpi.c
+END

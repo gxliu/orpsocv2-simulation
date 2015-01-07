@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/i2c_master_slave/sim
+END
+i2c_master_slave-loopback.c
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/i2c_master_slave/sim/i2c_master_slave-loopback.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/sw/tests/i2c_master_slave/sim/Makefile
+END

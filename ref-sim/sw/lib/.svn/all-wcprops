@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/lib
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/655/openrisc/trunk/orpsocv2/sw/lib/Makefile
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ocsvn/openrisc/!svn/ver/489/openrisc/trunk/orpsocv2/sw/lib/printf.c
+END
+lib-utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/489/openrisc/trunk/orpsocv2/sw/lib/lib-utils.c
+END

@@ -1,0 +1,32 @@
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/include
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../sw/bootrom
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/vpi/verilog
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/include
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/usbhostslave
++incdir+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/vpi
+-y /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/vpi/verilog
+-y /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/include
+-y /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/usbhostslave
+-y /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/vpi
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/arbiter
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/cfi_ctrl
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/clkgen
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/dbg_if
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/ethmac
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/i2c_master_slave
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/intgen
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/jtag_tap
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/or1200
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/orpsoc_top
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/ram_wb
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/rom
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/simple_spi
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/smii
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/uart16550
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/usbhostslave
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/wb_ram_b3
+-y  /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../rtl/verilog/wb_switch_b3
+-y /home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog
+/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/run/../../bench/verilog/orpsoc_testbench.v
+

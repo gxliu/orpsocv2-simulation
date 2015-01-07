@@ -1,0 +1,46 @@
+10
+
+dir
+868
+http://opencores.org/ocsvn/openrisc/openrisc/trunk/orpsocv2/sw/tests
+http://opencores.org/ocsvn/openrisc
+
+
+
+2013-03-20T13:57:15.214687Z
+858
+stekern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04c7f051-eaf3-4997-922d-f29d9d8c0f3f
+
+ethmac
+dir
+
+or1200
+dir
+
+cfi_ctrl
+dir
+
+sdram
+dir
+
+spi
+dir
+
+uart
+dir
+

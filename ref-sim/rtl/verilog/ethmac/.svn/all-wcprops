@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac
+END
+xilinx_dist_ram_16x32.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/xilinx_dist_ram_16x32.v
+END
+eth_outputcontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_outputcontrol.v
+END
+eth_maccontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_maccontrol.v
+END
+ethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/439/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/ethmac.v
+END
+eth_transmitcontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_transmitcontrol.v
+END
+eth_macstatus.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_macstatus.v
+END
+eth_rxstatem.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_rxstatem.v
+END
+eth_registers.v
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_registers.v
+END
+eth_crc.v
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_crc.v
+END
+eth_txstatem.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_txstatem.v
+END
+eth_rxethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/570/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_rxethmac.v
+END
+eth_shiftreg.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_shiftreg.v
+END
+eth_spram_256x32.v
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ocsvn/openrisc/!svn/ver/570/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_spram_256x32.v
+END
+eth_rxcounters.v
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/570/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_rxcounters.v
+END
+eth_txethmac.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_txethmac.v
+END
+eth_txcounters.v
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_txcounters.v
+END
+eth_wishbone.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/570/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_wishbone.v
+END
+eth_random.v
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_random.v
+END
+eth_rxaddrcheck.v
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_rxaddrcheck.v
+END
+eth_receivecontrol.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_receivecontrol.v
+END
+eth_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_fifo.v
+END
+eth_register.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/570/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_register.v
+END
+eth_clockgen.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_clockgen.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/README
+END
+eth_miim.v
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/618/openrisc/trunk/orpsocv2/rtl/verilog/ethmac/eth_miim.v
+END

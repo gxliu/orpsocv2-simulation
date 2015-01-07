@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ocsvn/openrisc/!svn/ver/547/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if
+END
+dbg_cpu.v
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_cpu.v
+END
+dbg_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/547/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_wb.v
+END
+dbg_cpu_registers.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_cpu_registers.v
+END
+dbg_if.v
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ocsvn/openrisc/!svn/ver/363/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_if.v
+END
+dbg_crc32_d1.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_crc32_d1.v
+END
+dbg_register.v
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/360/openrisc/trunk/orpsocv2/rtl/verilog/dbg_if/dbg_register.v
+END

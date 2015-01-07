@@ -1,0 +1,85 @@
+10
+
+dir
+868
+http://opencores.org/ocsvn/openrisc/openrisc/trunk/orpsocv2/rtl/verilog
+http://opencores.org/ocsvn/openrisc
+
+
+
+2012-11-08T19:17:37.560007Z
+853
+olof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+04c7f051-eaf3-4997-922d-f29d9d8c0f3f
+
+cfi_ctrl
+dir
+
+orpsoc_top
+dir
+
+arbiter
+dir
+
+jtag_tap
+dir
+
+wb_ram_b3
+dir
+
+rom
+dir
+
+smii
+dir
+
+ethmac
+dir
+
+clkgen
+dir
+
+simple_spi
+dir
+
+ram_wb
+dir
+
+dbg_if
+dir
+
+uart16550
+dir
+
+wb_switch_b3
+dir
+
+i2c_master_slave
+dir
+
+usbhostslave
+dir
+
+or1200
+dir
+
+include
+dir
+
+intgen
+dir
+

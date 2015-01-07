@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog
+END
+versatile_fifo_dual_port_ram_dc_sw.v
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_fifo_dual_port_ram_dc_sw.v
+END
+sdr_16_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/sdr_16_defines.v
+END
+latency_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/latency_counter_defines.v
+END
+burst_length_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/burst_length_counter_defines.v
+END
+delay.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/delay.v
+END
+pre_delay_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/pre_delay_counter_defines.v
+END
+ctrl_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ctrl_counter_defines.v
+END
+fsm_sdr_16.v
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fsm_sdr_16.v
+END
+fifo_adr_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fifo_adr_counter_defines.v
+END
+ref_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ref_counter_defines.v
+END
+dcm_pll.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/dcm_pll.v
+END
+cke_delay_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/cke_delay_counter_defines.v
+END
+ddr_16_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ddr_16_defines.v
+END
+fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fifo.v
+END
+ddr_ff.v
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ddr_ff.v
+END
+sdr_16.fzm
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/sdr_16.fzm
+END
+ref_delay_counter_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ref_delay_counter_defines.v
+END
+egress_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/egress_fifo.v
+END
+versatile_counter.xls
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_counter.xls
+END
+inc_adr.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/inc_adr.v
+END
+versatile_mem_ctrl_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_mem_ctrl_top.v
+END
+ddr_16.fzm
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/ddr_16.fzm
+END
+versatile_mem_ctrl_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_mem_ctrl_wb.v
+END
+versatile_mem_ctrl_ip.v
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/ocsvn/openrisc/!svn/ver/411/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_mem_ctrl_ip.v
+END
+copyright.v
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/copyright.v
+END
+versatile_mem_ctrl_ddr.v
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_mem_ctrl_ddr.v
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/openrisc/!svn/ver/425/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/Makefile
+END
+versatile_mem_ctrl_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/versatile_mem_ctrl_defines.v
+END
+fsm_wb.v
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fsm_wb.v
+END
+codec.v
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/codec.v
+END
+fizzim.pl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fizzim.pl
+END
+fifo_fill.fzm
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/boards/actel/ordb1a3pe1500/rtl/verilog/versatile_mem_ctrl/rtl/verilog/fifo_fill.fzm
+END

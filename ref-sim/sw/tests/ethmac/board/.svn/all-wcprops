@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ocsvn/openrisc/!svn/ver/567/openrisc/trunk/orpsocv2/sw/tests/ethmac/board
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/sw/tests/ethmac/board/Makefile
+END
+ethmac-ping.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/567/openrisc/trunk/orpsocv2/sw/tests/ethmac/board/ethmac-ping.c
+END

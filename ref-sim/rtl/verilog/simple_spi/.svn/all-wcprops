@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/simple_spi
+END
+simple_spi.v
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/408/openrisc/trunk/orpsocv2/rtl/verilog/simple_spi/simple_spi.v
+END
+fifo4.v
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/rtl/verilog/simple_spi/fifo4.v
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ocsvn/openrisc/!svn/ver/361/openrisc/trunk/orpsocv2/rtl/verilog/simple_spi/README
+END

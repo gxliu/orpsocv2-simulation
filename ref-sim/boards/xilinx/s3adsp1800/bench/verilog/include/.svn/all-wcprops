@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include
+END
+ddr2_model_preload.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/ddr2_model_preload.v
+END
+synthesis-defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/synthesis-defines.v
+END
+timescale.v
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/timescale.v
+END
+eth_stim.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/eth_stim.v
+END
+eth_phy_defines.v
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/eth_phy_defines.v
+END
+ddr2_model_parameters.v
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/bench/verilog/include/ddr2_model_parameters.v
+END

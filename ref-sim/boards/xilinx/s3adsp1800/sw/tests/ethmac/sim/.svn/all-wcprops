@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim
+END
+ethmac-rx.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim/ethmac-rx.c
+END
+ethmac-tx.c
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim/ethmac-tx.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim/Makefile
+END
+ethmac-rxtxcallresponse.c
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim/ethmac-rxtxcallresponse.c
+END
+ethmac-rxtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/tests/ethmac/sim/ethmac-rxtx.c
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/bootrom
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/bootrom/Makefile
+END
+bootrom.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/sw/bootrom/bootrom.v
+END

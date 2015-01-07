@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/arbiter
+END
+arbiter_ibus.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/arbiter/arbiter_ibus.v
+END
+arbiter_bytebus.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/arbiter/arbiter_bytebus.v
+END
+arbiter_dbus.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/ocsvn/openrisc/!svn/ver/568/openrisc/trunk/orpsocv2/boards/xilinx/s3adsp1800/rtl/verilog/arbiter/arbiter_dbus.v
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ocsvn/openrisc/!svn/ver/530/openrisc/trunk/orpsocv2/sw/drivers/ethmac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/sw/drivers/ethmac/Makefile
+END
+ethmac.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ocsvn/openrisc/!svn/ver/409/openrisc/trunk/orpsocv2/sw/drivers/ethmac/ethmac.c
+END

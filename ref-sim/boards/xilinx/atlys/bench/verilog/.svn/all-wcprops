@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/ocsvn/openrisc/!svn/ver/631/openrisc/trunk/orpsocv2/boards/xilinx/atlys/bench/verilog
+END
+ddr2_model.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/ocsvn/openrisc/!svn/ver/631/openrisc/trunk/orpsocv2/boards/xilinx/atlys/bench/verilog/ddr2_model.v
+END
+orpsoc_testbench.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/ocsvn/openrisc/!svn/ver/631/openrisc/trunk/orpsocv2/boards/xilinx/atlys/bench/verilog/orpsoc_testbench.v
+END
+or1200_monitor.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/ocsvn/openrisc/!svn/ver/631/openrisc/trunk/orpsocv2/boards/xilinx/atlys/bench/verilog/or1200_monitor.v
+END
