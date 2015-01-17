@@ -193,7 +193,7 @@ _mem:	l.movhi	r3,0x1234
 
 	l.mtspr r0,r8,0x1234   /* Should be 0x12352af7 */
 
-	l.slwz	r9,0(r31)
+	l.lwz	r9,0(r31)
 	l.add	r8,r9,r8
 	l.sw	0(r31),r8
 	
@@ -898,7 +898,7 @@ _D17:
         /* 1st operation operand before branch is used to set flag */
         /* 1st and 2nd operation operands before and after branch are NOT related */
         /* 1st operation before branch is SINGLE cycle */
-        /* 2nd operation after branch/before jump is lwz */
+        /* 2nd operation after branch/before jump is LWZ */
 	l.addi	r14,r0,0x4      /* init inc. loop cnt. */
 	l.addi	r16,r0,0x10     /* init dec. loop cnt. */
 _D18:

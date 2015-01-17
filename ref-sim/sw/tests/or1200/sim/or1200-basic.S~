@@ -188,7 +188,7 @@ _mem:	l.movhi	r3,0x1234
         l.add   r8,r8,r4
         l.sh    4(r31),r4
 
-	l.slwz	r4,4(r31)
+	l.lwz	r4,4(r31)
 	l.add   r8,r8,r4
 
 	l.mtspr r0,r8,0x1234   /* Should be 0x12352af7 */
@@ -196,7 +196,44 @@ _mem:	l.movhi	r3,0x1234
 	l.lwz	r9,0(r31)
 	l.add	r8,r9,r8
 	l.sw	0(r31),r8
+
+ _fibonacci:
+ 	l.addi  	r3,r0,1	 # move immediate I	# tmp47,
+ 	l.sw    	-16(r2),r3	 # SI store	# second, tmp47
+ 	l.addi  	r3,r0,0	 # move immediate I	#,
+ 	l.sw    	-8(r2),r3	 # SI store	# i,
+ 	l.j     	.L2
+ 	l.nop			# nop delay slot	#
+ .L3:
+ 	l.lwz   	r4,-12(r2)	 # SI load	# first.0, first
+ 	l.lwz   	r3,-16(r2)	 # SI load	# second.1, second
+ 	l.add   	r3,r4,r3	# third.2, first.0, second.1
+ 	l.sw    	-20(r2),r3	 # SI store	# third, third.2
+ 	l.lwz   	r3,-16(r2)	 # SI load	# second.3, second
+ 	l.sw    	-12(r2),r3	 # SI store	# first, second.3
+ 	l.lwz   	r3,-20(r2)	 # SI load	# third.4, third
+ 	l.sw    	-16(r2),r3	 # SI store	# second, third.4
+ 	l.lwz   	r3,-20(r2)	 # SI load	# third.5, third
+ 	l.addi		r3,r3,0		 # third.5
+ 	l.nop		2		 #
+ 	l.lwz   	r3,-8(r2)	 # SI load	# tmp48, i
+ 	l.addi  	r3,r3,1		# tmp49, tmp48,
+ 	l.sw    	-8(r2),r3	 # SI store	# i, tmp49
+ .L2:
+ 	l.lwz   	r3,-8(r2)	 # SI load	# tmp50, i
+ 	l.sflesi	r3,19	# tmp50,
+ 	l.bf	.L3
+ 	l.nop			# nop delay slot	#
 	
+ 	l.movhi 	r3,hi(-2147483648)	 # move immediate M	# tmp52,
+ 	l.ori   	r3,r3,13		# tmp51, tmp52,
+
+ 	l.addi		r3,r3,0	# tmp51
+ 	l.nop		2	#
+
+ 	l.addi  	r3,r0,0	 # move immediate I	# tmp53,
+ 	l.add r3,r0,r3	# tmp53
+ 	l.nop 1	#
 
 _arith:
 	l.addi	r3,r0,1
@@ -898,7 +935,7 @@ _D17:
         /* 1st operation operand before branch is used to set flag */
         /* 1st and 2nd operation operands before and after branch are NOT related */
         /* 1st operation before branch is SINGLE cycle */
-        /* 2nd operation after branch/before jump is lwz */
+        /* 2nd operation after branch/before jump is LWZ */
 	l.addi	r14,r0,0x4      /* init inc. loop cnt. */
 	l.addi	r16,r0,0x10     /* init dec. loop cnt. */
 _D18:

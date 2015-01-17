@@ -79,7 +79,7 @@ module or1200_except
    spr_dat_npc, datain, du_dsr, epcr_we, eear_we, esr_we, pc_we, epcr, eear, 
    du_dmr1, du_hwbkpt, du_hwbkpt_ls_r, esr, sr_we, to_sr, sr, lsu_addr, 
    abort_ex, icpu_ack_i, icpu_err_i, dcpu_ack_i, dcpu_err_i, sig_fp, fpcsr_fpee,
-   dsx
+   dsx, ex_dslot
    
 );
 
@@ -149,6 +149,8 @@ input				icpu_err_i;
 input				dcpu_ack_i;
 input				dcpu_err_i;
 output 			        dsx;
+   output 			ex_dslot;
+   
    
 //
 // Internal regs and wires

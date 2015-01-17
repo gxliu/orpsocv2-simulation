@@ -134,12 +134,12 @@
 
 
 
-#define OR1200_NO_DC
 
 
 
 
-#define OR1200_NO_IC
+
+
 
 
 
@@ -174,6 +174,14 @@
 
 
 #endif
+
+
+
+
+
+
+
+#define OR1200_CYPHERDB_SEED_IMPLEMENTED
 
 
 
@@ -582,6 +590,11 @@
 
 /* */
 /* */
+
+/* CypherDB secure instruction */
+
+
+
 /* CypherDB secure instruction */
 
 /* */

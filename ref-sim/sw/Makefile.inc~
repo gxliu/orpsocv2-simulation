@@ -205,22 +205,18 @@ $(OR1200_PROCESSED_VERILOG_DEFINES): $(OR1200_VERILOG_DEFINES)
 %.flash16: %.bin $(UTILS_BIN2VMEM)
 	$(Q)$(UTILS_BIN2VMEM) $< -bpw=2 > $@
 
-%.elf: %.c $(VECTORS_OBJ) $(ELF_DEPENDS) $(SUPPORT_LIBS)
-	$(Q)$(OR32_CC) $< $(VECTORS_OBJ) $(ELF_DEPENDS) $(OR32_CFLAGS) \
-	$(OR32_LDFLAGS) -o $@
-	$(Q)$(OR32_CC) -S $< $(VECTORS_OBJ) $(ELF_DEPENDS) $(OR32_CFLAGS) \
-	$(OR32_LDFLAGS) -o $@
+##%.elf: %.c $(VECTORS_OBJ) $(ELF_DEPENDS) $(SUPPORT_LIBS)
+##	$(Q)$(OR32_CC) $< $(VECTORS_OBJ) $(ELF_DEPENDS) $(OR32_CFLAGS) \
+##	$(OR32_LDFLAGS) -o $@
 
-%.elf: %.S $(ELF_DEPENDS) $(SUPPORT_LIBS)
-	$(Q)$(OR32_CC) $< $(ELF_DEPENDS) $(OR32_CFLAGS) $(OR32_LDFLAGS) -o $@
+%.elf: %.S $(VECTORS_OBJ)$(ELF_DEPENDS) $(SUPPORT_LIBS)
+	$(Q)$(OR32_CC) $< $(VECTORS_OBJ)$(ELF_DEPENDS) $(OR32_CFLAGS) $(OR32_LDFLAGS) -o $@
 
 %.o: %.S processed-verilog-headers
 	$(Q)$(OR32_CC) $(OR32_CFLAGS) -c $< -o $@
 
 %.o: %.c processed-verilog-headers
 	$(Q)$(OR32_CC) $(OR32_CFLAGS) -c $< -o $@
-
- 
 
 COMPILE_SRCS_BASENAMES=$(basename $(COMPILE_SRCS))
 COMPILE_OBJS=$(COMPILE_SRCS_BASENAMES:%=%.o)

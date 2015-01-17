@@ -1,0 +1,12 @@
+The cycle accurate simulation (modelsim/icarus Verilog) is inside the folder ./ref-sim
+The simulation can be done by entering "make rtl-test" in ./ref-sim/sim/run
+
+The reason for a separate simulation folder is because there is some modules in implementation cannot be simulated, for example, advanced debug system, ppl etc.
+One-size-fit-all approach would make the code complex and difficult to read, therefore, we take an alternative approach by separating the folder.
+
+However, it is important to make sure that the modules inside simulation and implementation are synchronized. In CypherDB project, our interest is on the or1200 module.
+
+/* linux software */
+The linux is in the directory: $HOME/Workspace/PhD/CipherCloud_FPGA/altera/openrisc_sw/linux
+
+7-1-2015: Current works only involves simulation

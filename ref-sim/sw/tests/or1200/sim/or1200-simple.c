@@ -14,8 +14,6 @@ int main()
   volatile int second = 1;
   volatile int third, n;
   int i;
-  
-  for (i=0;i<1000;i++);
 
   for (i=0; i<=100; i++)
     {

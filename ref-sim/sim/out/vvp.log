@@ -1,9 +1,11 @@
 
 * Starting simulation of ORPSoC RTL.
-* Test: or1200-basic
+* Test: or1200-secure-insn-test
 
-* VCD in ../out/or1200-basic.vcd
+* VCD in ../out/or1200-secure-insn-test.vcd
 
-VCD info: dumpfile ../out/or1200-basic.vcd opened for output.
-report(0x8000fffb);
+VCD info: dumpfile ../out/or1200-secure-insn-test.vcd opened for output.
+Or1200 IC enabled at 133730.00 ns
+Or1200 DC enabled at 171870.00 ns
+report(0xcdf00ba2);
 exit(0)

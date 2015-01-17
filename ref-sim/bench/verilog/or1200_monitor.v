@@ -102,7 +102,7 @@ module or1200_monitor;
       insns = 0;
 
    end
-
+ 
    //
    // Get GPR
    //
@@ -1510,7 +1510,7 @@ end
 		$fwrite(finsn,"l.lwz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
 	     end
 
-	   `OR1200_OR32_SLWZ:
+	   `OR1200_OR32_SLWZ: // secure custom instruction
 	     begin
 		$fwrite(finsn,"l.slwz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
 	     end
@@ -1518,6 +1518,11 @@ end
 	   `OR1200_OR32_LBZ:
 	     begin
 		$fwrite(finsn,"l.lbz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
+	     end
+
+	   `OR1200_OR32_SLBZ: // secure custom instruction
+	     begin
+		$fwrite(finsn,"l.slbz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
 	     end
 
 	   `OR1200_OR32_LBS:
@@ -1530,6 +1535,11 @@ end
 		$fwrite(finsn,"l.lhz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
 	     end
 
+	   `OR1200_OR32_SLHZ: // secure custom instruction
+	     begin
+		$fwrite(finsn,"l.slhz r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
+	     end
+
 	   `OR1200_OR32_LHS:
 	     begin
 		$fwrite(finsn,"l.lhs r%0d,0x%0h(r%0d)",rD_num,imm_16bit,rA_num);
@@ -1540,7 +1550,7 @@ end
 		$fwrite(finsn,"l.sw 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
 	     end
 
-	   `OR1200_OR32_SSW:
+	   `OR1200_OR32_SSW: // secure custom instruction
 	     begin
 		$fwrite(finsn,"l.ssw 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
 	     end
@@ -1550,11 +1560,21 @@ end
 		$fwrite(finsn,"l.sb 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
 	     end
 
+	   `OR1200_OR32_SSB: // secure custom instruction
+	     begin
+		$fwrite(finsn,"l.ssb 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
+	     end
+	   
 	   `OR1200_OR32_SH:
 	     begin
 		$fwrite(finsn,"l.sh 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
 	     end
 
+	   `OR1200_OR32_SSH: // secure custom instruction
+	     begin
+		$fwrite(finsn,"l.ssh 0x%0h(r%0d),r%0d",imm_split16bit,rA_num,rB_num);
+	     end
+	   
 	   `OR1200_OR32_MFSPR:
 	     begin
 		$fwrite(finsn,"l.mfspr r%0d,r%0d,0x%h",rD_num,rA_num,imm_16bit,);
@@ -1602,6 +1622,13 @@ end
 	     begin
 		$fwrite(finsn,"l.muli r%0d,r%0d,0x%h",rD_num,rA_num,imm_16bit);
 	     end
+
+`ifdef OR1200_CYPHERDB_SEED_IMPLEMENTED
+	   `OR1200_CYPHERDB_SEED:
+	     begin
+		$fwrite(finsn,"l.seed r%0d,r%0d,0x%h",rA_num,rB_num,imm_split16bit);
+	     end
+`endif
 
 	   `OR1200_OR32_ALU:
 	     begin

@@ -131,12 +131,12 @@
 //
 // Do not implement Data cache
 //
-`define OR1200_NO_DC
+//`define OR1200_NO_DC
 
 //
 // Do not implement Insn cache
 //
-`define OR1200_NO_IC
+//`define OR1200_NO_IC
 
 //
 // Do not implement Data MMU
@@ -171,6 +171,14 @@
 //`define OR1200_DC_1W_32KB
 
 `endif
+
+
+//////////////////////////////////////////////////////////
+//
+// CypherDB hardware setting
+//
+
+`define OR1200_CYPHERDB_SEED_IMPLEMENTED
 
 
 //////////////////////////////////////////////////////////
@@ -713,9 +721,19 @@
 `define OR1200_OR32_MFSPR             6'b101101
 `define OR1200_OR32_SH_ROTI 	      6'b101110
 `define OR1200_OR32_SFXXI             6'b101111
+
 /* CypherDB secure instruction */
-`define OR1200_OR32_SLWZ              6'b011100
-`define OR1200_OR32_SSW               6'b011101
+`define OR1200_OR32_SLWZ              6'b111010
+`define OR1200_OR32_SSW               6'b111011
+
+`define OR1200_OR32_SLBZ              6'b111100
+`define OR1200_OR32_SSB               6'b111101
+
+`define OR1200_OR32_SLHZ              6'b111110
+`define OR1200_OR32_SSH               6'b111111
+
+`define OR1200_CYPHERDB_SEED	      6'b001010
+/* CypherDB secure instruction */
 
 /* */
 `define OR1200_OR32_MTSPR             6'b110000
