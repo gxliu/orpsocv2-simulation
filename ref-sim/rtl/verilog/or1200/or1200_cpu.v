@@ -614,7 +614,7 @@ module or1200_cpu(
 		       .rst(rst),
 		       .ce_w(fifo_write_req),
 		       .din(sload_flag_delayed),
-		       .ce_r(dcpu_enc_ack_i & !dcpu_we_o & !delayed_ack_o),
+		       .ce_r(enc_ack_load),
 		       .dout(load_mux)
 		       );
 
@@ -626,71 +626,64 @@ module or1200_cpu(
    // On-chip AES encryption engine control module (FSM)
    //
 
-   wire [31:0] dcpu_cipher_i;
-   wire [31:0] dcpu_cipher_o;
-   wire        wb_encryption_control; 
-   wire        enc_start;
-   wire        enc_done;
-   wire [127:0] enc_key;
-   wire [127:0] enc_seed;
-   wire [127:0] enc_pad;   
+   wire 	delayed_ack_load;
+   wire 	delayed_ack_store;	
    wire 	dcpu_enc_ack_i;
-   wire 	enc_unstall;
-   wire 	delayed_ack_o;
-   wire 	dcpu_enc_rty_i;	
+   wire 	enc_ack_load;
+   wire 	enc_ack_store;
+
+   wire 	dcpu_enc_rty_i;
+   
+   wire 	enc_unstall_load;
+   wire 	enc_unstall_store;
+   
+   wire [31:0] 	dcpu_cipher_o;
+   wire [31:0] 	dcpu_cipher_i;
 
    assign enc_key = 128'h0123456789abcdef0123456789abcdef;
-   assign dcpu_enc_ack_i = (delayed_ack_o & enc_unstall) 
-     | (enc_unstall & dcpu_ack_i) | (dcpu_ack_i & dcpu_we_o);
+   assign dcpu_enc_ack_i =  enc_ack_load | enc_ack_store;
+
+   assign enc_ack_load = (delayed_ack_load & enc_unstall_load)
+     | (enc_unstall_load & dcpu_ack_i & !dcpu_we_o);
+
+   assign enc_ack_store = (delayed_ack_store & enc_unstall_store) | (enc_unstall_store & dcpu_ack_i & dcpu_we_o);
+   
    assign dcpu_enc_rty_i = ~dcpu_enc_ack_i;
    
    //assign dcpu_enc_ack_i = dcpu_ack_i;  
 
    or1200_ack_fsm
-     or1200_ack_fsm (
+     or1200_ack_load (
 		     .clk(clk),
 		     .rst(rst),
-		     .ack_i(dcpu_ack_i),
-		     .lsu_we(dcpu_we_o),
-		     .enc_fsm_unstall(enc_unstall),
-		     .delayed_ack_o(delayed_ack_o)
+		     .ack_i(dcpu_ack_i & !dcpu_we_o),
+		     .enc_fsm_unstall(enc_unstall_load),
+		     .delayed_ack_o(delayed_ack_load)
+		     );
+
+    or1200_ack_fsm
+     or1200_ack_store (
+		     .clk(clk),
+		     .rst(rst),
+		     .ack_i(dcpu_ack_i & dcpu_we_o),
+		     .enc_fsm_unstall(enc_unstall_store),
+		     .delayed_ack_o(delayed_ack_store)
 		     );
    
-   or1200_encryption_fsm 
-     or1200_encryption_fsm(
-			   .clk(clk),
-			   .rst(rst),
-			   .dataIn1(dcpu_lsu_o),
-			   .dataOut1(dcpu_cipher_o),
-			   .dataIn2(dcpu_dat_i),
-			   .dataOut2(dcpu_cipher_i),
-			   .seedIn(seedIn),
-			   .seedAddr(seedAddr),
-			   .seedImm(seedImm),
-			   .seedRead(seedRead),
-			   .enc_start(enc_start),
-			   .enc_done(enc_done),
-			   .enc_key(enc_key),
-			   .enc_seed(enc_seed),
-			   .enc_pad(enc_pad),
-			   .wb_control(wb_encryption_control),
-			   .unstall(enc_unstall)
-			   );
-
-   //
-   // On-chip AES encryption engine
-   //
-
-   aes_cipher_top aes_cipher_128 
-     (
-      .clk(clk), 
-      .rst(!rst),
-      .ld(enc_start),
-      .done(enc_done),
-      .key(enc_key),
-      .text_in(enc_seed),
-      .text_out(enc_pad)
-      );	
+   or1200_enc_fsm_top
+     or1200_enc_fsm_top (
+			 .clk(clk),
+			 .rst(rst),
+			 .seedIn(seedIn),
+			 .seedAddr(seedAddr),
+			 .seedImm(seedImm),
+			 .dataIn_store(dcpu_lsu_o),
+			 .dataOut_store(dcpu_cipher_o),
+			 .dataIn_load(dcpu_dat_i),
+			 .dataOut_load(dcpu_cipher_i),
+			 .unstall_load(enc_unstall_load),
+			 .unstall_store(enc_unstall_store)
+			 );
    
    //
    // mux to control the normal data flow and secure data flow between

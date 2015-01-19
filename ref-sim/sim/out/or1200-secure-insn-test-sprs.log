@@ -526,8 +526,8 @@
 171650.00 ns: Write to SPR : [00001803] <- 00001000
 171770.00 ns: Read from SPR: [00000011] -> 00008011
 171950.00 ns: Write to SPR : [00000011] <- 00008019
-174690.00 ns: Write to SPR : [00001234] <- ffff0012
-177230.00 ns: Write to SPR : [00001234] <- 83c6c97c
+174770.00 ns: Write to SPR : [00001234] <- ffff0012
+177230.00 ns: Write to SPR : [00001234] <- 1234c137
 178190.00 ns: Write to SPR : [00001234] <- fffffffa
 179230.00 ns: Write to SPR : [00001234] <- ffffa5a7
 180210.00 ns: Write to SPR : [00001234] <- 000fffff

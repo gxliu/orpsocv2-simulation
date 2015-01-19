@@ -11,14 +11,13 @@
 
 module or1200_ack_fsm(
 		      clk, rst,
-		      ack_i, lsu_we, enc_fsm_unstall, delayed_ack_o
+		      ack_i, enc_fsm_unstall, delayed_ack_o
 		      );
 
    input clk;
    input rst;
 
    input ack_i;
-   input lsu_we;
    input enc_fsm_unstall;
 
    output delayed_ack_o;
@@ -38,7 +37,7 @@ module or1200_ack_fsm(
 	case (state)
 
 	  IDLE:
-	    if (ack_i & !enc_fsm_unstall & !lsu_we) begin
+	    if (ack_i & !enc_fsm_unstall) begin
 	       state <= WAIT_FOR_UNSTALL;
 	       delayed_ack_o <= 1;      
 	    end else begin

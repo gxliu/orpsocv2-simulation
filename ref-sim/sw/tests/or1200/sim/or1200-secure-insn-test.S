@@ -119,6 +119,9 @@ _regs:
 	l.addi	r15,r14,0x4000
 	l.addi	r16,r15,0x8000
 
+	/* new insn test */
+	l.seed  r3,r2,0x3
+	
 	l.sub	r31,r0,r1
 	l.sub	r30,r31,r2
 	l.sub	r29,r30,r3
@@ -140,10 +143,7 @@ _regs:
 
 	l.mtspr	r0,r16,0x1234	/* Should be 0xffff0012 */
 
-	l.seed 	r3,r2,0x3
-
 	l.ssw	0(r31),r16
-
 
 _mem:	l.movhi	r3,0x1234
 	l.ori	r3,r3,0x5678
@@ -151,7 +151,7 @@ _mem:	l.movhi	r3,0x1234
 	l.ssw	4(r31),r3
 
 	/* new insn test */
-	l.seed	r3,r2,0x3
+	l.seed	r3,r2,0x403
 
 	l.slbz	r4,4(r31)
 	l.add	r8,r8,r4
@@ -161,7 +161,7 @@ _mem:	l.movhi	r3,0x1234
 	l.ssb	10(r31),r4
 	
 	/* new insn test */
-	l.seed 	r3,r2,0x3
+	l.seed 	r3,r2,0x403
 	
 	l.slbz	r4,6(r31)
 	l.add	r8,r8,r4
@@ -188,7 +188,7 @@ _mem:	l.movhi	r3,0x1234
         l.ssh    10(r31),r4
 
 	/* new insn test */	
-	l.seed 	r3,r2,0x3
+	l.seed 	r3,r2,0x403
 	
         l.slhz   r4,6(r31)
         l.add   r8,r8,r4

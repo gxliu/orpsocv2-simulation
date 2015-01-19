@@ -7,5 +7,5 @@
 VCD info: dumpfile ../out/or1200-secure-insn-test.vcd opened for output.
 Or1200 IC enabled at 133730.00 ns
 Or1200 DC enabled at 171870.00 ns
-report(0xcdf00ba2);
+report(0xf18e0cc5);
 exit(0)

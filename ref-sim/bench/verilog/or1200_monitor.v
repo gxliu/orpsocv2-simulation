@@ -47,6 +47,8 @@ module or1200_monitor;
 
    integer fexe;
    integer finsn;
+   integer fram;
+   
 
    reg [23:0] ref;
 `ifdef OR1200_MONITOR_SPRS
@@ -87,6 +89,7 @@ module or1200_monitor;
 
 `ifdef OR1200_MONITOR_EXEC_STATE
       fexe = $fopen(trim({LOG_DIR, "/", testcase, "-executed.log"}));
+      fram = $fopen(trim({LOG_DIR, "/", testcase, "-ram.log"}));
 `endif
 `ifdef OR1200_MONITOR_EXEC_LOG_DISASSEMBLY
       finsn = fexe;
@@ -127,6 +130,21 @@ module or1200_monitor;
       end
    endtask
 
+   task display_ram_data;
+      input [31:0] addr_start;
+      input [31:0] addr_end;
+
+      reg [31:0] mem_dat;
+      integer 	 i;
+      
+      begin
+	 for (i=addr_start; i< addr_end; i=i+1) begin
+	    mem_dat = `DUT_TOP.ram_wb0.ram_wb_b3_0.get_mem32(i);
+	    $fwrite(fram, "addr:\t %h: %h \n", i, mem_dat);
+	 end
+      end
+   endtask
+   
    //
    // Write state of the OR1200 registers into a file
    //
@@ -175,6 +193,10 @@ module or1200_monitor;
 	 $fwrite(fexe, "EEAR0: %h  ", r);
 	 r = `OR1200_TOP.`CPU_cpu.`CPU_sprs.esr;
 	 $fdisplay(fexe, "ESR0 : %h", r);
+
+	 $fwrite(fram, "insn : %d \n", insns);
+	 display_ram_data(0,100);
+	 
 `endif //  `ifdef OR1200_MONITOR_EXEC_STATE
 	 insns = insns + 1;
       end
