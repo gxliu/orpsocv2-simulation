@@ -1,0 +1,11 @@
+Warning (10268): Verilog HDL information at or1200_pulse_gen.v(44): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at or1200_fpu_intfloat_conv.v(78): object "snan" differs only in case from object "SNAN" in the same scope
+Info (10281): Verilog HDL Declaration information at or1200_fpu_intfloat_conv.v(86): object "INF" differs only in case from object "inf" in the same scope
+Info (10281): Verilog HDL Declaration information at or1200_fpu_intfloat_conv.v(87): object "QNAN" differs only in case from object "qnan" in the same scope
+Warning (10268): Verilog HDL information at sdc_controller.v(456): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at sd_data_master.v(223): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at sd_controller_wb.v(145): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at sd_cmd_serial_host.v(296): always construct contains both blocking and non-blocking assignments
+Warning (10273): Verilog HDL warning at fsm_sdr_16.v(145): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at orpsoc_top.v(1375): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at orpsoc_top.v(2647): extended using "x" or "z"

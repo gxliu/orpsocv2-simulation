@@ -1,0 +1,202 @@
+
+State Machine - |orpsoc_top|sdc_controller:sdc_controller_0|sd_data_serial_host:sd_data_serial_host_1|state
+Name state.000000 state.READ_DAT state.READ_WAIT state.WRITE_BUSY state.WRITE_CRC state.WRITE_DAT state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.000000 1 0 0 0 0 0 1 
+state.WRITE_DAT 0 0 0 0 0 1 1 
+state.WRITE_CRC 0 0 0 0 1 0 1 
+state.WRITE_BUSY 0 0 0 1 0 0 1 
+state.READ_WAIT 0 0 1 0 0 0 1 
+state.READ_DAT 0 1 0 0 0 0 1 
+
+State Machine - |orpsoc_top|sdc_controller:sdc_controller_0|sd_data_master:data_master_1|state
+Name state.000000000 state.STOP_RECIVE_CMD state.STOP_SEND state.STOP state.DATA_TRANSFER state.RECIVE_CMD state.SEND_CMD state.GET_RX_BD state.GET_TX_BD state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 
+state.000000000 1 0 0 0 0 0 0 0 0 1 
+state.GET_TX_BD 0 0 0 0 0 0 0 0 1 1 
+state.GET_RX_BD 0 0 0 0 0 0 0 1 0 1 
+state.SEND_CMD 0 0 0 0 0 0 1 0 0 1 
+state.RECIVE_CMD 0 0 0 0 0 1 0 0 0 1 
+state.DATA_TRANSFER 0 0 0 0 1 0 0 0 0 1 
+state.STOP 0 0 0 1 0 0 0 0 0 1 
+state.STOP_SEND 0 0 1 0 0 0 0 0 0 1 
+state.STOP_RECIVE_CMD 0 1 0 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|sdc_controller:sdc_controller_0|sd_cmd_serial_host:cmd_serial_host_1|state
+Name state.0000000000 state.ACK_WO state.DLY_WO state.WRITE_WO state.ACK_WR state.DLY_READ state.READ_WR state.DLY_WR state.WRITE_WR state.IDLE state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 0 
+state.0000000000 1 0 0 0 0 0 0 0 0 0 1 
+state.IDLE 0 0 0 0 0 0 0 0 0 1 1 
+state.WRITE_WR 0 0 0 0 0 0 0 0 1 0 1 
+state.DLY_WR 0 0 0 0 0 0 0 1 0 0 1 
+state.READ_WR 0 0 0 0 0 0 1 0 0 0 1 
+state.DLY_READ 0 0 0 0 0 1 0 0 0 0 1 
+state.ACK_WR 0 0 0 0 1 0 0 0 0 0 1 
+state.WRITE_WO 0 0 0 1 0 0 0 0 0 0 1 
+state.DLY_WO 0 0 1 0 0 0 0 0 0 0 1 
+state.ACK_WO 0 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|sdc_controller:sdc_controller_0|sd_cmd_master:cmd_master_1|response_size
+Name response_size.0101000 response_size.0000000 response_size.1111111 
+response_size.0000000 0 0 0 
+response_size.0101000 1 1 0 
+response_size.1111111 0 1 1 
+
+State Machine - |orpsoc_top|sdc_controller:sdc_controller_0|sd_cmd_master:cmd_master_1|state
+Name state.000 state.EXECUTE state.SETUP state.IDLE 
+state.IDLE 0 0 0 0 
+state.000 1 0 0 1 
+state.SETUP 0 0 1 1 
+state.EXECUTE 0 1 0 1 
+
+State Machine - |orpsoc_top|uart16550:uart16550_0|uart_wb:wb_interface|wbstate
+Name wbstate.11 wbstate.10 wbstate.01 wbstate.00 
+wbstate.00 0 0 0 0 
+wbstate.01 0 0 1 1 
+wbstate.10 0 1 0 1 
+wbstate.11 1 0 0 1 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[2].wb_port|sdram_state
+Name sdram_state.IDLE sdram_state.WRITE sdram_state.READ 
+sdram_state.IDLE 0 0 0 
+sdram_state.READ 1 0 1 
+sdram_state.WRITE 1 1 0 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[2].wb_port|wb_state
+Name wb_state.REFILL wb_state.WRITE wb_state.READ wb_state.IDLE 
+wb_state.IDLE 0 0 0 0 
+wb_state.READ 0 0 1 1 
+wb_state.WRITE 0 1 0 1 
+wb_state.REFILL 1 0 0 1 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[1].wb_port|sdram_state
+Name sdram_state.IDLE sdram_state.WRITE sdram_state.READ 
+sdram_state.IDLE 0 0 0 
+sdram_state.READ 1 0 1 
+sdram_state.WRITE 1 1 0 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[1].wb_port|wb_state
+Name wb_state.REFILL wb_state.WRITE wb_state.READ wb_state.IDLE 
+wb_state.IDLE 0 0 0 0 
+wb_state.READ 0 0 1 1 
+wb_state.WRITE 0 1 0 1 
+wb_state.REFILL 1 0 0 1 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[0].wb_port|sdram_state
+Name sdram_state.IDLE sdram_state.WRITE sdram_state.READ 
+sdram_state.IDLE 0 0 0 
+sdram_state.READ 1 0 1 
+sdram_state.WRITE 1 1 0 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|arbiter:arbiter|wb_port:wbports[0].wb_port|wb_state
+Name wb_state.REFILL wb_state.WRITE wb_state.READ wb_state.IDLE 
+wb_state.IDLE 0 0 0 0 
+wb_state.READ 0 0 1 1 
+wb_state.WRITE 0 1 0 1 
+wb_state.REFILL 1 0 0 1 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|sdram_ctrl:sdram_ctrl|next_state
+Name next_state.READ next_state.IDLE next_state.PRE next_state.ACTIVATE 
+next_state.IDLE 0 0 0 0 
+next_state.READ 1 1 0 0 
+next_state.ACTIVATE 0 1 0 1 
+next_state.PRE 0 1 1 0 
+
+State Machine - |orpsoc_top|wb_sdram_ctrl:wb_sdram_ctrl0|sdram_ctrl:sdram_ctrl|state
+Name state.REF state.PRE_ALL state.PRE state.ACTIVATE state.WRITE state.READ state.IDLE state.INIT_PGM_MODE state.INIT_REF state.INIT_PRE state.INIT_POWERUP 
+state.INIT_POWERUP 0 0 0 0 0 0 0 0 0 0 0 
+state.INIT_PRE 0 0 0 0 0 0 0 0 0 1 1 
+state.INIT_REF 0 0 0 0 0 0 0 0 1 0 1 
+state.INIT_PGM_MODE 0 0 0 0 0 0 0 1 0 0 1 
+state.IDLE 0 0 0 0 0 0 1 0 0 0 1 
+state.READ 0 0 0 0 0 1 0 0 0 0 1 
+state.WRITE 0 0 0 0 1 0 0 0 0 0 1 
+state.ACTIVATE 0 0 0 1 0 0 0 0 0 0 1 
+state.PRE 0 0 1 0 0 0 0 0 0 0 1 
+state.PRE_ALL 0 1 0 0 0 0 0 0 0 0 1 
+state.REF 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_jsp_module:i_dbg_jsp|rd_module_state
+Name rd_module_state.011 rd_module_state.010 rd_module_state.001 rd_module_state.000 
+rd_module_state.000 0 0 0 0 
+rd_module_state.001 0 0 1 1 
+rd_module_state.010 0 1 0 1 
+rd_module_state.011 1 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_jsp_module:i_dbg_jsp|wr_module_state
+Name wr_module_state.011 wr_module_state.010 wr_module_state.001 wr_module_state.000 
+wr_module_state.000 0 0 0 0 
+wr_module_state.001 0 0 1 1 
+wr_module_state.010 0 1 0 1 
+wr_module_state.011 1 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_jsp_module:i_dbg_jsp|adbg_jsp_biu:jsp_biu_i|wr_fsm_state
+Name wr_fsm_state.00 wr_fsm_state.10 wr_fsm_state.01 
+wr_fsm_state.00 0 0 0 
+wr_fsm_state.01 1 0 1 
+wr_fsm_state.10 1 1 0 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_jsp_module:i_dbg_jsp|adbg_jsp_biu:jsp_biu_i|rd_fsm_state
+Name rd_fsm_state.11 rd_fsm_state.10 rd_fsm_state.01 rd_fsm_state.00 
+rd_fsm_state.00 0 0 0 0 
+rd_fsm_state.01 0 0 1 1 
+rd_fsm_state.10 0 1 0 1 
+rd_fsm_state.11 1 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_or1k_module:i_dbg_cpu_or1k|module_state
+Name module_state.1011 module_state.1010 module_state.1001 module_state.1000 module_state.0111 module_state.0110 module_state.0101 module_state.0100 module_state.0011 module_state.0010 module_state.0001 module_state.0000 
+module_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+module_state.0001 0 0 0 0 0 0 0 0 0 0 1 1 
+module_state.0010 0 0 0 0 0 0 0 0 0 1 0 1 
+module_state.0011 0 0 0 0 0 0 0 0 1 0 0 1 
+module_state.0100 0 0 0 0 0 0 0 1 0 0 0 1 
+module_state.0101 0 0 0 0 0 0 1 0 0 0 0 1 
+module_state.0110 0 0 0 0 0 1 0 0 0 0 0 1 
+module_state.0111 0 0 0 0 1 0 0 0 0 0 0 1 
+module_state.1000 0 0 0 1 0 0 0 0 0 0 0 1 
+module_state.1001 0 0 1 0 0 0 0 0 0 0 0 1 
+module_state.1010 0 1 0 0 0 0 0 0 0 0 0 1 
+module_state.1011 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_wb_module:i_dbg_wb|module_state
+Name module_state.1011 module_state.1010 module_state.1001 module_state.1000 module_state.0111 module_state.0110 module_state.0101 module_state.0100 module_state.0011 module_state.0010 module_state.0001 module_state.0000 
+module_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+module_state.0001 0 0 0 0 0 0 0 0 0 0 1 1 
+module_state.0010 0 0 0 0 0 0 0 0 0 1 0 1 
+module_state.0011 0 0 0 0 0 0 0 0 1 0 0 1 
+module_state.0100 0 0 0 0 0 0 0 1 0 0 0 1 
+module_state.0101 0 0 0 0 0 0 1 0 0 0 0 1 
+module_state.0110 0 0 0 0 0 1 0 0 0 0 0 1 
+module_state.0111 0 0 0 0 1 0 0 0 0 0 0 1 
+module_state.1000 0 0 0 1 0 0 0 0 0 0 0 1 
+module_state.1001 0 0 1 0 0 0 0 0 0 0 0 1 
+module_state.1010 0 1 0 0 0 0 0 0 0 0 0 1 
+module_state.1011 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|adv_dbg_if:dbg_if0|adbg_wb_module:i_dbg_wb|adbg_wb_biu:wb_biu_i|sel_reg
+Name sel_reg.1111 sel_reg.1100 sel_reg.1000 sel_reg.0100 sel_reg.0011 sel_reg.0010 sel_reg.0001 sel_reg.0000 
+sel_reg.0000 0 0 0 0 0 0 0 0 
+sel_reg.0001 0 0 0 0 0 0 1 1 
+sel_reg.0010 0 0 0 0 0 1 0 1 
+sel_reg.0011 0 0 0 0 1 0 0 1 
+sel_reg.0100 0 0 0 1 0 0 0 1 
+sel_reg.1000 0 0 1 0 0 0 0 1 
+sel_reg.1100 0 1 0 0 0 0 0 1 
+sel_reg.1111 1 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|or1200_top:or1200_top0|or1200_dc_top:or1200_dc_top|or1200_dc_fsm:or1200_dc_fsm|state
+Name state.111 state.110 state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 0 0 
+state.001 0 0 0 0 0 0 1 1 
+state.010 0 0 0 0 0 1 0 1 
+state.011 0 0 0 0 1 0 0 1 
+state.100 0 0 0 1 0 0 0 1 
+state.101 0 0 1 0 0 0 0 1 
+state.110 0 1 0 0 0 0 0 1 
+state.111 1 0 0 0 0 0 0 1 
+
+State Machine - |orpsoc_top|or1200_top:or1200_top0|or1200_ic_top:or1200_ic_top|or1200_ic_fsm:or1200_ic_fsm|state
+Name state.00 state.10 state.01 
+state.00 0 0 0 
+state.01 1 0 1 
+state.10 1 1 0 

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Jan 19 17:43:58 2015
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
+Revision Name : orpsoc_top
+Top-level Entity Name : orpsoc_top
+Family : Cyclone IV GX
+Total logic elements : 52,160
+    Total combinational functions : 32,175
+    Dedicated logic registers : 29,060
+Total registers : 29060
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 887,936
+Embedded Multiplier 9-bit elements : 8
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 1
