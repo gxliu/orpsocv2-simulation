@@ -134,12 +134,8 @@ module or1200_secure_insn_dpram
    // RAM read
    //
    always @(posedge clk_a or `OR1200_RST_EVENT rst)
-     if (rst == `OR1200_RST_VALUE) begin
+     if (rst == `OR1200_RST_VALUE)
 	addr_a_reg <= 0;
-	addr_b_reg <= 0;
-	for (i=0; i<(1<<aw); i=i+1)
-	  mem[i] <= 0;
-     end
      else if (ce_a) begin
 	addr_a_reg <= addr_a_reg + 1;
      end
@@ -147,8 +143,13 @@ module or1200_secure_insn_dpram
    //
    // RAM write
    //
-   always @(posedge clk_b)
-     if (ce_b & we_b) begin
+   always @(posedge clk_b or `OR1200_RST_EVENT rst)
+     if (rst == `OR1200_RST_VALUE) begin
+	addr_b_reg <= 0;
+	for (i=0; i<(1<<aw); i=i+1)
+	  mem[i] <= 0;
+     end
+     else if (ce_b & we_b) begin
 	mem[addr_b_reg] <=  di_b;
 	addr_b_reg <= addr_b_reg + 1;
      end
