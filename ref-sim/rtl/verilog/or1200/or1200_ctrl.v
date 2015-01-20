@@ -78,7 +78,7 @@ module or1200_ctrl
    sload_flag, sstore_flag, ld_sw_flag,
 
    // output ports to encryption control module
-   cypherdb_ra, cypherdb_rb, cypherdb_imm, cypherdb_seedw
+   cypherdb_rb, cypherdb_imm, cypherdb_seedr
    );
 
    //
@@ -145,17 +145,16 @@ module or1200_ctrl
    output					except_illegal;
    output 					dc_no_writethrough;
 
-    // secure instruction indicator
+   // secure instruction indicator
    output 					sload_flag;
    output 					sstore_flag; 
 
    output 					ld_sw_flag;
-			
+   
    // output ports to encryption control module
-   output [4:0]					cypherdb_ra;
-   output [4:0]					cypherdb_rb;
-   output [10:0]					cypherdb_imm;
-   output 					cypherdb_seedw;
+   output [4:0] 				cypherdb_rb;
+   output [10:0] 				cypherdb_imm;
+   output 					cypherdb_seedr;
    
    //
    // Internal wires and regs
@@ -210,21 +209,20 @@ module or1200_ctrl
    reg 						sstore_flag;
 
    // register for output ports to encryption control module
-   reg [4:0] 					cypherdb_ra;
-   reg [4:0] 					cypherdb_rb;
-   reg [10:0] 					cypherdb_imm;
-   reg 						cypherdb_seedw; 						
+   //reg 						cypherdb_seedr; 						
+   // internal wire for CypherDB
+   wire 					if_seed_op;					
    
    //test
    assign ld_sw_flag = |id_lsu_op;
    //test
-						   
+   
    //
    // Register file read addresses
    //
    assign rf_addra = if_insn[20:16];
    assign rf_addrb = if_insn[15:11];
-   assign rf_rda = if_insn[31] || if_maci_op;
+   assign rf_rda = if_insn[31] || if_maci_op || if_seed_op;
    assign rf_rdb = if_insn[30];
 
    //
@@ -234,24 +232,33 @@ module or1200_ctrl
    //
    // Decode of CypherDB l.seed instruction
    //
-   always @(posedge clk or `OR1200_RST_EVENT rst) begin
-      if (rst == `OR1200_RST_VALUE)
-	cypherdb_seedw <=  0;
-      else if (!ex_freeze & id_freeze | ex_flushpipe)
-	cypherdb_seedw <= 0;
-      else if (id_insn[31:26] == `OR1200_CYPHERDB_SEED) begin
-	 cypherdb_imm <= {id_insn[25:21], id_insn[10:0]};
-	 cypherdb_ra <= id_insn[20:16];
-	 cypherdb_rb <= id_insn[15:11];
-	 cypherdb_seedw <= 1'b1;
-      end
-      else begin
-	 cypherdb_seedw <= 1'b0;
-	  cypherdb_imm <= 0;
-	 cypherdb_ra <= 0;
-	 cypherdb_rb <= 0;
-      end
-   end
+   //
+   // CypherDB seed inputs
+   // The seed components (seedImm, seedAddr) are sent to encryption_fsm at IF stage
+   // However, seedIn has to come from register files. 
+   // A control signal of seed reading has to be sent at ID stage (seedIn is ready that time)
+   //
+
+   reg 						cypherdb_seedr;
+   
+   
+   assign cypherdb_imm = {id_insn[25:21], id_insn[10:0]};
+   //assign cypherdb_ra = if_insn[20:16];
+   assign cypherdb_rb = id_insn[15:11];
+
+   always @(posedge clk)
+     cypherdb_seedr <= if_seed_op;
+   
+   // always @(posedge clk or `OR1200_RST_EVENT rst) begin
+   //    if (rst == `OR1200_RST_VALUE)
+   // 	cypherdb_seedr <= 0; 
+   //    else if (!ex_freeze & id_freeze | ex_flushpipe)
+   // 	cypherdb_seedr <= 0;
+   //    else if (id_insn[31:26] == `OR1200_CYPHERDB_SEED)
+   // 	 cypherdb_seedr <= 1;
+   //    else 
+   // 	 cypherdb_seedr <= 0;
+   // end // always @ (posedge clk or `OR1200_RST_EVENT rst)
 `endif
    
    //
@@ -350,11 +357,11 @@ module or1200_ctrl
 	     id_simm = {{16{id_insn[15]}}, id_insn[15:0]};
 	     sload_flag = 1;
 	  end
-	   
-	  // l.muli
+	
+	// l.muli
 `ifdef OR1200_MULT_IMPLEMENTED
-	  `OR1200_OR32_MULI:
-	    id_simm = {{16{id_insn[15]}}, id_insn[15:0]};
+	`OR1200_OR32_MULI:
+	  id_simm = {{16{id_insn[15]}}, id_insn[15:0]};
 `endif
 
 	// l.maci
@@ -369,7 +376,7 @@ module or1200_ctrl
 	
 	// l.sxx (store instructions)
 	`OR1200_OR32_SW, `OR1200_OR32_SH, `OR1200_OR32_SB:
-	    id_simm = {{16{id_insn[25]}}, id_insn[25:21], id_insn[10:0]};
+	  id_simm = {{16{id_insn[25]}}, id_insn[25:21], id_insn[10:0]};
 
 	// l.ssxx (secure store instructions)
 	`OR1200_OR32_SSW, `OR1200_OR32_SSH, `OR1200_OR32_SSB:
@@ -421,6 +428,12 @@ module or1200_ctrl
    assign if_maci_op = 1'b0;
 `endif
 
+`ifdef OR1200_CYPHERDB_SEED_IMPLEMENTED
+   assign if_seed_op = (if_insn[31:26] == `OR1200_CYPHERDB_SEED);
+`else
+   assign if_seed_op = 1'b0;
+`endif
+
    //
    // l.macrc in ID stage
    //
@@ -429,6 +442,8 @@ module or1200_ctrl
 `else
    assign id_macrc_op = 1'b0;
 `endif
+
+   
 
    //
    // l.macrc in EX stage
@@ -772,12 +787,12 @@ module or1200_ctrl
 	   `OR1200_OR32_MFSPR,
 	   `OR1200_OR32_XSYNC,
 `ifdef OR1200_MAC_IMPLEMENTED
-	   `OR1200_OR32_MACI,
+	     `OR1200_OR32_MACI,
 `endif
 `ifdef OR1200_CYPHERDB_SEED_IMPLEMENTED
-	   `OR1200_CYPHERDB_SEED,    
+	       `OR1200_CYPHERDB_SEED,    
 `endif
-	   `OR1200_OR32_LWZ,
+		 `OR1200_OR32_LWZ,
 	   `OR1200_OR32_SLWZ, // secure custom instruction
 	   `OR1200_OR32_LWS,
 	   `OR1200_OR32_LBZ,

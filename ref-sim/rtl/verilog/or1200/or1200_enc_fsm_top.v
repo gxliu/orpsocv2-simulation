@@ -12,8 +12,8 @@
 
 module or1200_enc_fsm_top(
 			  clk, rst,
-			  // input of encryption seed, seedRead?
-			  seedIn, seedAddr, seedImm,
+			  // input of encryption seed, seedRead
+			  seedIn, seedAddr, seedImm, seed_read,
 			  // output of the encrypted data
 			  dataIn_load, dataOut_load, 
 			  dataIn_store, dataOut_store,
@@ -25,9 +25,11 @@ module or1200_enc_fsm_top(
    input rst;
 
    // Seed Input and control
-   input [4:0]	 seedIn;
+   input [31:0]	 seedIn;
    input [4:0]	 seedAddr;
    input [10:0]	 seedImm;
+   input 	 seed_read;
+   
 
    // Data I/O
    input [31:0] dataIn_load;
@@ -43,12 +45,12 @@ module or1200_enc_fsm_top(
    wire [127:0]  encryption_key;
    
    // internal registers and wires for LOAD
-   wire [4:0] 	 seedIn_load;
+   wire [31:0] 	 seedIn_load;
    wire [4:0] 	 seedAddr_load;
    wire [10:0] 	 seedImm_load;
    
    // internal registers and wires for STORE
-   wire [4:0] 	 seedIn_store;
+   wire [31:0] 	 seedIn_store;
    wire [4:0] 	 seedAddr_store;
    wire [10:0] 	 seedImm_store;
    
@@ -82,12 +84,17 @@ module or1200_enc_fsm_top(
 			  .unstall(unstall_store)
 			  );
 
-   assign seedImm_load = seedImm[10] ? seedImm : 11'b0;
-   assign seedIn_load = seedImm[10] ? seedIn : 5'b0;
-   assign seedAddr_load = seedImm[10] ? seedAddr : 5'b0;
+   assign seedImm_load = (seedImm[10] & seed_read) ? seedImm : 11'b0;
+   assign seedIn_load = (seedImm[10] & seed_read) ? seedIn : 5'b0;
+   assign seedAddr_load = (seedImm[10] & seed_read) ? seedAddr : 5'b0;
 
-   assign seedImm_store = !seedImm[10] ? seedImm : 11'b0;
-   assign seedIn_store = !seedImm[10] ? seedIn : 5'b0;
-   assign seedAddr_store = !seedImm[10] ? seedAddr : 5'b0;
+   assign seedImm_store = (!seedImm[10] & seed_read) ? seedImm : 11'b0;
+   assign seedIn_store = (!seedImm[10] & seed_read) ? seedIn : 5'b0;
+   assign seedAddr_store = (!seedImm[10] & seed_read) ? seedAddr : 5'b0;
 
+   //
+   // Store the seedImm, seedIn and seedAddr into a buffer when 
+   // seed_read is asserted
+   //
+   
 endmodule

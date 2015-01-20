@@ -1,17 +1,17 @@
-Fitter Status : Successful - Mon Jan 19 17:49:25 2015
+Fitter Status : Successful - Mon Jan 19 19:37:48 2015
 Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
 Revision Name : orpsoc_top
 Top-level Entity Name : orpsoc_top
 Family : Cyclone IV GX
 Device : EP4CGX150DF31C7
 Timing Models : Final
-Total logic elements : 48,690 / 149,760 ( 33 % )
-    Total combinational functions : 32,187 / 149,760 ( 21 % )
-    Dedicated logic registers : 29,028 / 149,760 ( 19 % )
-Total registers : 29028
+Total logic elements : 29,024 / 149,760 ( 19 % )
+    Total combinational functions : 26,608 / 149,760 ( 18 % )
+    Dedicated logic registers : 10,041 / 149,760 ( 7 % )
+Total registers : 10041
 Total pins : 76 / 508 ( 15 % )
 Total virtual pins : 0
-Total memory bits : 887,936 / 6,635,520 ( 13 % )
+Total memory bits : 93,312 / 6,635,520 ( 1 % )
 Embedded Multiplier 9-bit elements : 8 / 720 ( 1 % )
 Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
 Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )

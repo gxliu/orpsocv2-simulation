@@ -29,7 +29,7 @@ module or1200_encryption_fsm(
    output [31:0] dataOut;
 
    // Seed Input and control
-   input [4:0]	 seedIn;
+   input [31:0]	 seedIn;
    input [4:0]	 seedAddr;
    input [10:0]	 seedImm;
 
@@ -77,19 +77,19 @@ module or1200_encryption_fsm(
    // Instantiation of a pulse generator
    // It is used to generate a pulse (a clock period wide) to start the encryption
    or1200_pulse_gen 
-      or1200_pulse_gen(
-		       .clk(clk),
-		       .rst(rst),
-		       .in(seedImm[0]),
-		       .insn(1'b0),
-		       .pulse(enc_start)
-		       );
+     or1200_start_pulse_gen(
+			    .clk(clk),
+			    .rst(rst),
+			    .in(seedImm[0]),
+			    .insn(1'b0),
+			    .pulse(enc_start)
+			    );
 
    parameter SETUP_SEED = 1'b0;
    parameter WAIT_ENC = 1'b1;
-   
+
    assign enc_seed = {40'b0, usr, db, tb, col, row};
-   assign dataOut = dataIn ^ enc_pad_buf[31:0];
+   assign dataOut = enc_done ? dataIn ^ enc_pad[31:0] : dataIn ^ enc_pad_buf[31:0];
    //assign dataOut = dataIn;
    assign unstall = enc_done | fsm_unstall;
 
@@ -132,11 +132,11 @@ module or1200_encryption_fsm(
      end
      else begin
 	case (seedImm[5:1])
-	  5'b00001: row <= {27'b0, seedIn};
-	  5'b00010: col <= {11'b0, seedIn};
-	  5'b00100: tb <= {11'b0, seedIn};
-	  5'b01000: db <= {3'b0, seedIn};
-	  5'b10000: usr <= {11'b0, seedIn};
+	  5'b00001: row <= seedIn;
+	  5'b00010: col <= seedIn[15:0];
+	  5'b00100: tb <= seedIn[15:0];
+	  5'b01000: db <= seedIn[7:0];
+	  5'b10000: usr <= seedIn[15:0];
 	endcase
      end // else: !if(rst == `OR1200_RST_VALUE)
    	         

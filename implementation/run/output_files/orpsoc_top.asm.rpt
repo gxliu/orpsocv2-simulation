@@ -1,5 +1,5 @@
 Assembler report for orpsoc_top
-Mon Jan 19 17:49:59 2015
+Mon Jan 19 19:38:11 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jan 19 17:49:59 2015 ;
+; Assembler Status      ; Successful - Mon Jan 19 19:38:11 2015 ;
 ; Revision Name         ; orpsoc_top                            ;
 ; Top-level Entity Name ; orpsoc_top                            ;
 ; Family                ; Cyclone IV GX                         ;
@@ -60,7 +60,6 @@ agreement for further details.
 ; Vendor ; IP Core Name           ; License Type ;
 +--------+------------------------+--------------+
 ; Altera ; Signal Tap (6AF7 BCE1) ; Licensed     ;
-; Altera ; Signal Tap (6AF7 BCEC) ; Licensed     ;
 +--------+------------------------+--------------+
 
 
@@ -79,8 +78,8 @@ agreement for further details.
 ; Option         ; Setting                 ;
 +----------------+-------------------------+
 ; Device         ; EP4CGX150DF31C7         ;
-; JTAG usercode  ; 0x02158D7C              ;
-; Checksum       ; 0x02158D7C              ;
+; JTAG usercode  ; 0x01877188              ;
+; Checksum       ; 0x01877188              ;
 +----------------+-------------------------+
 
 
@@ -90,14 +89,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Mon Jan 19 17:49:44 2015
+    Info: Processing started: Mon Jan 19 19:38:01 2015
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off orpsoc_top -c orpsoc_top
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 923 megabytes
-    Info: Processing ended: Mon Jan 19 17:49:59 2015
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 845 megabytes
+    Info: Processing ended: Mon Jan 19 19:38:11 2015
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
 
 

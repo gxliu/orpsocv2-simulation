@@ -1,25 +1,26 @@
 [*]
 [*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
-[*] Thu Jan 15 18:09:23 2015
+[*] Tue Jan 20 06:24:16 2015
 [*]
 [dumpfile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/out/or1200-secure-insn-test.vcd"
-[dumpfile_mtime] "Thu Jan 15 18:00:48 2015"
-[dumpfile_size] 44271597
+[dumpfile_mtime] "Tue Jan 20 06:23:31 2015"
+[dumpfile_size] 50696867
 [savefile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/gtkAddWave.gtkw"
-[timestart] 175582000
+[timestart] 176344100
 [size] 1920 1124
-[pos] -1 -1
-*-18.595055 176790000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -738 -1
+*-17.595055 176851000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] orpsoc_testbench.
 [treeopen] orpsoc_testbench.dut.
 [treeopen] orpsoc_testbench.dut.or1200_top0.
 [treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.
+[treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.
 [treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_ld_insn_fifo.ld_insn_ram.
 [treeopen] orpsoc_testbench.dut.ram_wb0.
 [sst_width] 305
 [signals_width] 288
 [sst_expanded] 1
-[sst_vpaned_height] 582
+[sst_vpaned_height] 708
 @28
 orpsoc_testbench.dut.or1200_top0.clk_i
 orpsoc_testbench.dut.or1200_top0.rst_i
@@ -59,6 +60,8 @@ orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_ctrl.sstore_flag
 @28
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.dcpu_err_i
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_ack_i
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.enc_ack_load
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.enc_ack_store
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_enc_ack_i
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.dcpu_ack_i
 @22
@@ -77,8 +80,10 @@ orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_ld_insn_fifo.dout
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.store_mux
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.load_mux
 @22
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_dat_o[31:0]
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_lsu_o[31:0]
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_lsu_i[31:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_dat_i[31:0]
 @200
 -
 @28
@@ -87,28 +92,14 @@ orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.dcpu_we_o
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.ex_freeze
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.lsu_stall
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.lsu_unstall
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.unstall_load
 @22
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.ex_lsu_op[3:0]
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.id_lsu_op[3:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_enc_load_fsm.enc_pad[127:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_enc_load_fsm.enc_pad_buf[127:0]
 @28
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.seedRead
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.unstall_store
 @22
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.seedIn[4:0]
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.seedAddr[4:0]
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.seedImm[10:0]
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.enc_seed[127:0]
-@28
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.aes_cipher_128.clk
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.enc_done
-@22
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.aes_cipher_128.dcnt[3:0]
-@28
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.enc_start
-@22
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.enc_key[127:0]
-@28
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.unstall
-@22
-orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_encryption_fsm.enc_pad[127:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_enc_store_fsm.enc_pad[127:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_enc_store_fsm.enc_pad_buf[127:0]
 [pattern_trace] 1
 [pattern_trace] 0

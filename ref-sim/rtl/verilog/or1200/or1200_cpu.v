@@ -345,7 +345,8 @@ module or1200_cpu(
    wire [4:0] 				seedIn;
    wire [4:0] 				seedAddr;
    wire [10:0] 				seedImm;
-   wire 				seedRead; 
+   wire 				seed_ce;
+  
    
    //
    // Send exceptions to Debug Unit
@@ -554,10 +555,9 @@ module or1200_cpu(
 			   .sload_flag(sload_flag),
 			   .sstore_flag(sstore_flag),
 			   .ld_sw_flag(),
-			   .cypherdb_ra(seedIn),
 			   .cypherdb_rb(seedAddr),
 			   .cypherdb_imm(seedImm),
-			   .cypherdb_seedw(seedRead)
+			   .cypherdb_seedr(seed_ce)
 			   );
    
    //
@@ -674,9 +674,10 @@ module or1200_cpu(
      or1200_enc_fsm_top (
 			 .clk(clk),
 			 .rst(rst),
-			 .seedIn(seedIn),
+			 .seedIn(rf_dataa),
 			 .seedAddr(seedAddr),
 			 .seedImm(seedImm),
+			 .seed_read(seed_ce),
 			 .dataIn_store(dcpu_lsu_o),
 			 .dataOut_store(dcpu_cipher_o),
 			 .dataIn_load(dcpu_dat_i),
