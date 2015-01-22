@@ -650,9 +650,11 @@ module or1200_cpu(
    wire [31:0] 	dcpu_cipher_o;
    wire [31:0] 	dcpu_cipher_i;
 
-   wire [3:0] 	ex_shift_op;
+   wire [4:0] 	ex_shift_op;
 
    wire 	xor_stall_load;
+   wire 	xor_stall_store;
+   
    wire [31:0] 	encPad_load;
    wire [31:0] 	encPad_store;
    
@@ -705,7 +707,8 @@ module or1200_cpu(
 			 .unstall_store(enc_unstall_store),
 			 .load_ack_i(enc_ack_load),
 			 .store_ack_i(enc_ack_store),
-			 .xor_stall_load(xor_stall_load)
+			 .xor_stall_load(xor_stall_load),
+			 .xor_stall_store(xor_stall_store)
 			 );
    
    //

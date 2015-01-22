@@ -164,7 +164,7 @@ module or1200_ctrl
    output [4:0] 				cypherdb_shift_rb;
    output 					cypherdb_shift_ce;
    
-   output [3:0] 				ex_shift_op;
+   output [4:0] 				ex_shift_op;
    
    //
    // Internal wires and regs
@@ -224,7 +224,7 @@ module or1200_ctrl
    wire 					if_seed_op;
    wire 					if_shift_op;
 
-   reg [3:0] 					ex_shift_op;
+   reg [4:0] 					ex_shift_op;
  					
   
    //test
@@ -1239,23 +1239,23 @@ module or1200_ctrl
       case (ex_insn[31:26])		// synopsys parallel_case
         // l.slwz (secure custom instruction)
         `OR1200_OR32_SLWZ: 
-	  ex_shift_op = `OR1200_SHIFT_WORD;
+	  ex_shift_op = `OR1200_SHIFT_WORD_LOAD;
 
 	`OR1200_OR32_SLBZ:
-	  ex_shift_op = `OR1200_SHIFT_BYTE;
+	  ex_shift_op = `OR1200_SHIFT_BYTE_LOAD;
 	
 	`OR1200_OR32_SLHZ:
-	  ex_shift_op = `OR1200_SHIFT_HALF_WORD;
-/*
+	  ex_shift_op = `OR1200_SHIFT_HALF_WORD_LOAD;
+
 	`OR1200_OR32_SSW: 
-	  ex_shift_op = `OR1200_SHIFT_WORD;
+	  ex_shift_op = `OR1200_SHIFT_WORD_STORE;
 
 	`OR1200_OR32_SSB:
-	  ex_shift_op = `OR1200_SHIFT_BYTE;
+	  ex_shift_op = `OR1200_SHIFT_BYTE_STORE;
 	
 	`OR1200_OR32_SSH:
-	  ex_shift_op = `OR1200_SHIFT_HALF_WORD;
-*/
+	  ex_shift_op = `OR1200_SHIFT_HALF_WORD_STORE;
+
 	default:
 	  ex_shift_op = 0;
       endcase // case (id_insn[31:26])

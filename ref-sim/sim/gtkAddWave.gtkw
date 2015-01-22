@@ -1,25 +1,24 @@
 [*]
 [*] GTKWave Analyzer v3.3.34 (w)1999-2012 BSI
-[*] Thu Jan 22 14:36:48 2015
+[*] Thu Jan 22 17:43:06 2015
 [*]
 [dumpfile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/out/or1200-secure-insn-test.vcd"
-[dumpfile_mtime] "Thu Jan 22 14:34:14 2015"
-[dumpfile_size] 52062175
+[dumpfile_mtime] "Thu Jan 22 17:41:03 2015"
+[dumpfile_size] 52183408
 [savefile] "/home/bony/Workspace/PhD/CipherCloud_FPGA/altera/de2i-150/orpsoc2/ref-sim/sim/gtkAddWave.gtkw"
-[timestart] 175113000
+[timestart] 174998000
 [size] 1920 1124
 [pos] -1 -1
-*-18.595055 175670000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-18.595055 175430000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] orpsoc_testbench.
 [treeopen] orpsoc_testbench.dut.
 [treeopen] orpsoc_testbench.dut.or1200_top0.
 [treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.
-[treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.
 [treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_enc_load_fsm.aes_cipher_128.
 [treeopen] orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_ld_insn_fifo.ld_insn_ram.
 [treeopen] orpsoc_testbench.dut.ram_wb0.
 [sst_width] 305
-[signals_width] 470
+[signals_width] 516
 [sst_expanded] 1
 [sst_vpaned_height] 708
 @28
@@ -62,9 +61,7 @@ orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_ctrl.sstore_flag
 @28
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.dcpu_err_i
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_ack_i
-@29
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.enc_ack_load
-@28
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.enc_ack_store
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.dcpu_enc_ack_i
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.dcpu_ack_i
@@ -135,11 +132,20 @@ orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.shift_read
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.seed_init
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.unstall
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.shift_direction
 @22
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.to_shift[3:0]
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.enc_pad_buf[127:0]
 @28
 orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.state[1:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.or1200_shift_load.shift_done
+@22
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_enc_fsm_top.enc_pad_shifted_load[31:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.ex_shift_op[3:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.lsu_dataout_plain[31:0]
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.lsu_dataout_cipher[31:0]
+@23
+orpsoc_testbench.dut.or1200_top0.or1200_cpu.or1200_lsu.encPad_load[31:0]
 @200
 -
 [pattern_trace] 1

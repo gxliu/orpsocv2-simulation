@@ -24,7 +24,7 @@ module or1200_enc_fsm_top(
 			  // data cache delayed ack input
 			  load_ack_i, store_ack_i,
 			  // or1200 pipeline stall control signal
-			  xor_stall_load
+			  xor_stall_load, xor_stall_store
 			  );
    
    input clk;
@@ -42,7 +42,7 @@ module or1200_enc_fsm_top(
    input [10:0]  shiftImm;
    input 	 shift_read;
 
-   input [3:0] 	 ex_op;
+   input [4:0] 	 ex_op;
 
    // output of shifted encryption pad
    output [31:0] enc_pad_shifted_load;
@@ -56,6 +56,7 @@ module or1200_enc_fsm_top(
    output 	 store_ack_i;
 
    output 	 xor_stall_load;
+   output 	 xor_stall_store;	 
 
    // common registeres and wires for LOAD and STORE
    wire [127:0]  encryption_key;
@@ -79,9 +80,9 @@ module or1200_enc_fsm_top(
 
    wire [31:0]  enc_pad_shifted_load;
    wire [31:0] 	enc_pad_shifted_store;
-   
 
-   wire 	 xor_stall_load;	 
+   wire 	 xor_stall_load;
+   wire 	 xor_stall_store;
    
    assign encryption_key = 128'h0123456789abcdef0123456789abcdef;
 
@@ -120,6 +121,19 @@ module or1200_enc_fsm_top(
    assign seedIn_store = (!seedImm[10] & seed_read) ? seedIn : 5'b0;
    assign seedAddr_store = (!seedImm[10] & seed_read) ? seedAddr : 5'b0;
 
+   wire [3:0] 	 ex_op_load;
+   wire [3:0] 	 ex_op_store;
+
+   wire 	 shift_read_load;
+   wire 	 shift_read_store;
+   
+   // store the ex_op into two buffers according to the most significant bit
+   assign ex_op_load = ex_op[4] ? 0 : ex_op[3:0];
+   assign ex_op_store = ex_op[4] ? ex_op[3:0] : 0;
+
+   assign shift_read_load = shiftImm[10] ? 0 : shift_read;
+   assign shift_read_store = shiftImm[10] ? shift_read : 0;
+  
    //
    // Instantiation of the encryption pad shifting module
    //
@@ -131,13 +145,29 @@ module or1200_enc_fsm_top(
 		       .shift_ra(shiftRa),
 		       .shift_rb(shiftRb),
 		       .shift_imm(shiftImm),
-		       .shift_read(shift_read),
+		       .shift_read(shift_read_load),
 		       .enc_pad_in(enc_pad_load),
-		       .to_shift(ex_op),
+		       .to_shift(ex_op_load),
 		       .enc_pad_out(enc_pad_shifted_load),
 		       .ack_i(load_ack_i),
 		       .unstall(unstall_load | enc_done_load),
 		       .shift_done(xor_stall_load)
 		       );
+
+   or1200_enc_pad_shift
+     or1200_shift_store(
+			.clk(clk),
+			.rst(rst),
+			.shift_ra(shiftRa),
+			.shift_rb(shiftRb),
+			.shift_imm(shiftImm),
+			.shift_read(shift_read_store),
+			.enc_pad_in(enc_pad_store),
+			.to_shift(ex_op_store),
+			.enc_pad_out(enc_pad_shifted_store),
+			.ack_i(store_ack_i),
+			.unstall(unstall_store | enc_done_store),
+			.shift_done(xor_stall_store)
+			);
    
 endmodule

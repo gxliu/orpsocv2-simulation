@@ -128,7 +128,7 @@ module or1200_lsu(
    input 				encryption_cycstb;
    input 				xor_stall_load;
 
-   input [3:0] 				ex_shift_op;
+   input [4:0] 				ex_shift_op;
    input [31:0] 			encPad_load;
    input [31:0] 			encPad_store;
    
@@ -248,30 +248,51 @@ module or1200_lsu(
    or1200_reg2mem or1200_reg2mem(
 				 .addr(dcpu_adr_o[1:0]),
 				 .lsu_op(ex_lsu_op),
-				 .regdata(lsu_datain),
+				 .regdata(lsu_datain_plain),
 				 .memdata(dcpu_dat_o)
 				 );
    
    wire [31:0] lsu_dataout_plain;
    reg [31:0] lsu_dataout_cipher;
 
-   assign lsu_dataout = lsu_dataout_plain;
+   wire [31:0] lsu_datain_plain;
+   reg [31:0] lsu_datain_cipher;
 
-   always @(lsu_dataout or encPad_load or ex_shift_op) begin
+   assign lsu_dataout = lsu_dataout_plain;
+   assign lsu_datain_plain = lsu_datain;
+
+   always @(lsu_dataout_plain or encPad_load or ex_shift_op) begin
       case (ex_shift_op)
 	
-	`OR1200_SHIFT_BYTE:
+	`OR1200_SHIFT_BYTE_LOAD:
 	  lsu_dataout_cipher = {lsu_dataout_plain[31:8], lsu_dataout_plain[7:0] ^ encPad_load[31:24]};
   
-	`OR1200_SHIFT_HALF_WORD:
+	`OR1200_SHIFT_HALF_WORD_LOAD:
 	  lsu_dataout_cipher = {lsu_dataout_plain[31:16], lsu_dataout_plain[15:0] ^ encPad_load[31:16]};
 	
-	`OR1200_SHIFT_WORD:
+	`OR1200_SHIFT_WORD_LOAD:
 	  lsu_dataout_cipher = {lsu_dataout_plain[31:0] ^ encPad_load[31:0]};
 	
 	default: lsu_dataout_cipher = lsu_dataout_plain;
 	
-      endcase
+      endcase // case (ex_shift_op)
    end
+
+   always @(lsu_datain_plain or encPad_store or ex_shift_op) begin
+      case (ex_shift_op)
+
+      	`OR1200_SHIFT_BYTE_STORE:
+	  lsu_datain_cipher = {lsu_datain_plain[31:8], lsu_datain_plain[7:0] ^ encPad_store[31:24]};
+  
+	`OR1200_SHIFT_HALF_WORD_STORE:
+	  lsu_datain_cipher = {lsu_datain_plain[31:16], lsu_datain_plain[15:0] ^ encPad_store[31:16]};
+	
+	`OR1200_SHIFT_WORD_STORE:
+	  lsu_datain_cipher = {lsu_datain_plain[31:0] ^ encPad_store[31:0]};
+
+	default: lsu_datain_cipher = lsu_datain_plain;
+
+      endcase // case (ex_shift_op)
+   end // always @ (lsu_datain_plain or encPad_store or ex_shift_op)
    
 endmodule
