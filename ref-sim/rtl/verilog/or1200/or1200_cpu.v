@@ -346,6 +346,10 @@ module or1200_cpu(
    wire [4:0] 				seedAddr;
    wire [10:0] 				seedImm;
    wire 				seed_ce;
+   wire [4:0] 				shift_ra;
+   wire [4:0] 				shift_rb;
+   wire [10:0] 				shift_imm;
+   wire 				shift_ce;
   
    
    //
@@ -557,7 +561,13 @@ module or1200_cpu(
 			   .ld_sw_flag(),
 			   .cypherdb_rb(seedAddr),
 			   .cypherdb_imm(seedImm),
-			   .cypherdb_seedr(seed_ce)
+			   .cypherdb_seedr(seed_ce),
+			   .cypherdb_shift_ra(shift_ra),
+			   .cypherdb_shift_rb(shift_rb),
+			   .cypherdb_shift_imm(shift_imm),
+			   .cypherdb_shift_ce(shift_ce),
+
+			   .ex_shift_op(ex_shift_op)
 			   );
    
    //
@@ -640,6 +650,12 @@ module or1200_cpu(
    wire [31:0] 	dcpu_cipher_o;
    wire [31:0] 	dcpu_cipher_i;
 
+   wire [3:0] 	ex_shift_op;
+
+   wire 	xor_stall_load;
+   wire [31:0] 	encPad_load;
+   wire [31:0] 	encPad_store;
+   
    assign enc_key = 128'h0123456789abcdef0123456789abcdef;
    assign dcpu_enc_ack_i =  enc_ack_load | enc_ack_store;
 
@@ -678,12 +694,18 @@ module or1200_cpu(
 			 .seedAddr(seedAddr),
 			 .seedImm(seedImm),
 			 .seed_read(seed_ce),
-			 .dataIn_store(dcpu_lsu_o),
-			 .dataOut_store(dcpu_cipher_o),
-			 .dataIn_load(dcpu_dat_i),
-			 .dataOut_load(dcpu_cipher_i),
+			 .shiftRa(shift_ra),
+			 .shiftRb(shift_rb),
+			 .shiftImm(shift_imm),
+			 .shift_read(shift_ce),
+			 .ex_op(ex_shift_op),
+			 .enc_pad_shifted_load(encPad_load),
+			 .enc_pad_shifted_store(encPad_store),
 			 .unstall_load(enc_unstall_load),
-			 .unstall_store(enc_unstall_store)
+			 .unstall_store(enc_unstall_store),
+			 .load_ack_i(enc_ack_load),
+			 .store_ack_i(enc_ack_store),
+			 .xor_stall_load(xor_stall_load)
 			 );
    
    //
@@ -693,8 +715,8 @@ module or1200_cpu(
    // or1200_encryption takes dcpu_lsu_out as input and output dcpu_cipher_out
    //
 
-   assign dcpu_dat_o = store_mux ? dcpu_cipher_o : dcpu_lsu_o;
-   assign dcpu_lsu_i = load_mux ? dcpu_cipher_i : dcpu_dat_i;
+   assign dcpu_dat_o = dcpu_lsu_o;
+   assign dcpu_lsu_i = dcpu_dat_i;
    
    //
    // Instantiation of register file
@@ -927,7 +949,10 @@ module or1200_cpu(
 
 			 .sstore_i(sstore_flag),
 			 .sstore_o(store_mux),
-			 .encryption_cycstb(wb_encryption_control)
+			 .encryption_cycstb(wb_encryption_control),
+			 .ex_shift_op(ex_shift_op),
+			 .encPad_load(encPad_load),
+			 .encPad_store(encPad_store)
 			 );
 
    //

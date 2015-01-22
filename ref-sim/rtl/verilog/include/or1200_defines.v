@@ -733,6 +733,11 @@
 `define OR1200_OR32_SSH               6'b111111
 
 `define OR1200_CYPHERDB_SEED	      6'b001010
+`define OR1200_CYPHERDB_SHIFT	      6'b001011
+
+`define OR1200_SHIFT_WORD	      4'h8
+`define OR1200_SHIFT_HALF_WORD	      4'h4
+`define OR1200_SHIFT_BYTE	      4'h2
 /* CypherDB secure instruction */
 
 /* */

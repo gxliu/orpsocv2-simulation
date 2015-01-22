@@ -178,7 +178,7 @@
 // CypherDB hardware setting
 //
 
-`define OR1200_CYPHER_SEED_IMPLEMENTED
+`define OR1200_CYPHERDB_SEED_IMPLEMENTED
 
 
 //////////////////////////////////////////////////////////
@@ -733,6 +733,7 @@
 `define OR1200_OR32_SSH               6'b111111
 
 `define OR1200_CYPHERDB_SEED	      6'b001010
+`define OR1200_CYPHERDB_SHIFT	      6'b001011
 /* CypherDB secure instruction */
 
 /* */

@@ -78,7 +78,11 @@ module or1200_ctrl
    sload_flag, sstore_flag, ld_sw_flag,
 
    // output ports to encryption control module
-   cypherdb_rb, cypherdb_imm, cypherdb_seedr
+   cypherdb_rb, cypherdb_imm, cypherdb_seedr,
+   cypherdb_shift_ra, cypherdb_shift_rb, cypherdb_shift_imm, cypherdb_shift_ce,
+
+   // op code to shift module
+   ex_shift_op
    );
 
    //
@@ -155,6 +159,12 @@ module or1200_ctrl
    output [4:0] 				cypherdb_rb;
    output [10:0] 				cypherdb_imm;
    output 					cypherdb_seedr;
+   output [4:0] 				cypherdb_shift_ra;
+   output [10:0] 				cypherdb_shift_imm;
+   output [4:0] 				cypherdb_shift_rb;
+   output 					cypherdb_shift_ce;
+   
+   output [3:0] 				ex_shift_op;
    
    //
    // Internal wires and regs
@@ -211,8 +221,12 @@ module or1200_ctrl
    // register for output ports to encryption control module
    //reg 						cypherdb_seedr; 						
    // internal wire for CypherDB
-   wire 					if_seed_op;					
-   
+   wire 					if_seed_op;
+   wire 					if_shift_op;
+
+   reg [3:0] 					ex_shift_op;
+ 					
+  
    //test
    assign ld_sw_flag = |id_lsu_op;
    //test
@@ -241,24 +255,21 @@ module or1200_ctrl
 
    reg 						cypherdb_seedr;
    
-   
    assign cypherdb_imm = {id_insn[25:21], id_insn[10:0]};
    //assign cypherdb_ra = if_insn[20:16];
    assign cypherdb_rb = id_insn[15:11];
 
    always @(posedge clk)
      cypherdb_seedr <= if_seed_op;
-   
-   // always @(posedge clk or `OR1200_RST_EVENT rst) begin
-   //    if (rst == `OR1200_RST_VALUE)
-   // 	cypherdb_seedr <= 0; 
-   //    else if (!ex_freeze & id_freeze | ex_flushpipe)
-   // 	cypherdb_seedr <= 0;
-   //    else if (id_insn[31:26] == `OR1200_CYPHERDB_SEED)
-   // 	 cypherdb_seedr <= 1;
-   //    else 
-   // 	 cypherdb_seedr <= 0;
-   // end // always @ (posedge clk or `OR1200_RST_EVENT rst)
+
+   // CypherDB encryption pad shift signal, includes:
+   // cypherdb_shift_ra, cypherdb_shift_rb, cypherdb_shift_imm
+
+   assign cypherdb_shift_imm = {if_insn[25:21], if_insn[10:0]};
+   assign cypherdb_shift_ra = if_insn[20:16];
+   assign cypherdb_shift_rb = if_insn[15:11];
+   assign cypherdb_shift_ce = if_shift_op;
+  
 `endif
    
    //
@@ -430,8 +441,10 @@ module or1200_ctrl
 
 `ifdef OR1200_CYPHERDB_SEED_IMPLEMENTED
    assign if_seed_op = (if_insn[31:26] == `OR1200_CYPHERDB_SEED);
+   assign if_shift_op = (if_insn[31:26] == `OR1200_CYPHERDB_SHIFT);
 `else
    assign if_seed_op = 1'b0;
+   assign if_shift_op = 1'b0;
 `endif
 
    //
@@ -790,7 +803,8 @@ module or1200_ctrl
 	     `OR1200_OR32_MACI,
 `endif
 `ifdef OR1200_CYPHERDB_SEED_IMPLEMENTED
-	       `OR1200_CYPHERDB_SEED,    
+	       `OR1200_CYPHERDB_SEED,
+	   `OR1200_CYPHERDB_SHIFT,
 `endif
 		 `OR1200_OR32_LWZ,
 	   `OR1200_OR32_SLWZ, // secure custom instruction
@@ -1219,6 +1233,36 @@ module or1200_ctrl
        ex_branch_op <=  id_branch_op;
 
    //
+   // Decode of ex_shift_op
+   //
+   always @(ex_insn) begin
+      case (ex_insn[31:26])		// synopsys parallel_case
+        // l.slwz (secure custom instruction)
+        `OR1200_OR32_SLWZ: 
+	  ex_shift_op = `OR1200_SHIFT_WORD;
+
+	`OR1200_OR32_SLBZ:
+	  ex_shift_op = `OR1200_SHIFT_BYTE;
+	
+	`OR1200_OR32_SLHZ:
+	  ex_shift_op = `OR1200_SHIFT_HALF_WORD;
+/*
+	`OR1200_OR32_SSW: 
+	  ex_shift_op = `OR1200_SHIFT_WORD;
+
+	`OR1200_OR32_SSB:
+	  ex_shift_op = `OR1200_SHIFT_BYTE;
+	
+	`OR1200_OR32_SSH:
+	  ex_shift_op = `OR1200_SHIFT_HALF_WORD;
+*/
+	default:
+	  ex_shift_op = 0;
+      endcase // case (id_insn[31:26])
+   end
+	
+   
+   //
    // Decode of id_lsu_op
    //
    always @(id_insn) begin
@@ -1229,8 +1273,8 @@ module or1200_ctrl
 	  id_lsu_op =  `OR1200_LSUOP_LWZ;
 
         // l.slwz (secure custom instruction)
-        `OR1200_OR32_SLWZ:
-	  id_lsu_op =  `OR1200_LSUOP_LWZ;
+        `OR1200_OR32_SLWZ: 
+	   id_lsu_op =  `OR1200_LSUOP_LWZ;
 	
 	// l.lws
 	`OR1200_OR32_LWS:
@@ -1242,8 +1286,8 @@ module or1200_ctrl
 
 	// l.slbz (secure custom instruction)
 	`OR1200_OR32_SLBZ:
-	  id_lsu_op =  `OR1200_LSUOP_LBZ;	  
-
+	  id_lsu_op =  `OR1200_LSUOP_LBZ;
+	   
 	// l.lbs
 	`OR1200_OR32_LBS:
 	  id_lsu_op =  `OR1200_LSUOP_LBS;

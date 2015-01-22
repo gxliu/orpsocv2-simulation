@@ -11,22 +11,16 @@
 
 module or1200_encryption_fsm(
 			     clk, rst,
-			     // data I/O    
-			     dataIn, dataOut,
 			     // seed Input
 			     seedIn, seedAddr, seedImm,
 			     // encryption data and control I/O
-			     enc_key,
+			     enc_key, enc_pad, enc_done,
 			     // Control signals
 			     unstall
 			     );
 
    input clk;
    input rst;
-
-   // Data I/O
-   input [31:0] dataIn; 
-   output [31:0] dataOut;
 
    // Seed Input and control
    input [31:0]	 seedIn;
@@ -35,7 +29,8 @@ module or1200_encryption_fsm(
 
    // encryption key input
    input [127:0] enc_key;
-   
+   output [127:0] enc_pad;
+   output 	  enc_done;
 
    // encryption data and control I/O
    wire 	 enc_start;
@@ -58,7 +53,6 @@ module or1200_encryption_fsm(
    reg 	  fsm_unstall;
 
    reg 	       state;
-   reg [127:0] enc_pad_buf;
 
    // Instantiation of the 128 bits AES encryption engine
    // ld: start encryption; done: finish encryption
@@ -89,9 +83,10 @@ module or1200_encryption_fsm(
    parameter WAIT_ENC = 1'b1;
 
    assign enc_seed = {40'b0, usr, db, tb, col, row};
-   assign dataOut = enc_done ? dataIn ^ enc_pad[31:0] : dataIn ^ enc_pad_buf[31:0];
+
    //assign dataOut = dataIn;
-   assign unstall = enc_done | fsm_unstall;
+   //assign unstall = enc_done | fsm_unstall;
+   assign unstall = fsm_unstall;
 
    always @(posedge clk or `OR1200_RST_EVENT rst)
      if (rst == `OR1200_RST_VALUE) begin
@@ -112,7 +107,6 @@ module or1200_encryption_fsm(
 	    if (enc_done) begin
 	       state <= SETUP_SEED;
 	       fsm_unstall <= 1;
-	       enc_pad_buf <= enc_pad;
 	    end
 	    else begin
 	       state <= WAIT_ENC;

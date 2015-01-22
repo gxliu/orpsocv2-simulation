@@ -120,7 +120,7 @@ _regs:
 	l.addi	r16,r15,0x8000
 
 	/* new insn test */
-	l.seed  
+	l.seed  r4,r3,0x3  
 	
 	l.sub	r31,r0,r1
 	l.sub	r30,r31,r2
@@ -152,8 +152,10 @@ _mem:	l.movhi	r3,0x1234
 
 	/* new insn test */
 	l.seed	r3,r2,0x403
+	l.shift r0,r1,0x113
 
 	l.slbz	r4,4(r31)
+//	l.slbz  r4,4(r31)
 	l.add	r8,r8,r4
 	l.ssb	11(r31),r4
 	l.slbz	r4,5(r31)
@@ -162,6 +164,7 @@ _mem:	l.movhi	r3,0x1234
 	
 	/* new insn test */
 	l.seed 	r3,r2,0x403
+	l.shift r0,r1,0x113
 	
 	l.slbz	r4,6(r31)
 	l.add	r8,r8,r4

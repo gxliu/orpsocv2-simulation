@@ -1650,6 +1650,10 @@ end
 	     begin
 		$fwrite(finsn,"l.seed r%0d,r%0d,0x%h",rA_num,rB_num,imm_split16bit);
 	     end
+	   `OR1200_CYPHERDB_SHIFT:
+	     begin
+		$fwrite(finsn,"l.shift r%0d,r%0d,0x%h",rA_num,rB_num,imm_split16bit);
+	     end
 `endif
 
 	   `OR1200_OR32_ALU:

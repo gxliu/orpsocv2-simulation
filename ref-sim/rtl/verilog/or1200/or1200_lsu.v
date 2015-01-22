@@ -67,7 +67,8 @@ module or1200_lsu(
 		  dcpu_adr_o, dcpu_cycstb_o, dcpu_we_o, dcpu_sel_o, dcpu_tag_o, dcpu_dat_o,
 		  dcpu_dat_i, dcpu_ack_i, dcpu_rty_i, dcpu_err_i, dcpu_tag_i,
 		  // Control signal essential for the additional encrypted data flow
-		  sstore_i, sstore_o, encryption_cycstb,
+		  sstore_i, sstore_o, encryption_cycstb, xor_stall_load,
+		  ex_shift_op, encPad_load, encPad_store
 		  );
 
    parameter dw = `OR1200_OPERAND_WIDTH;
@@ -125,6 +126,11 @@ module or1200_lsu(
    input 				sstore_i;
    output 				sstore_o;
    input 				encryption_cycstb;
+   input 				xor_stall_load;
+
+   input [3:0] 				ex_shift_op;
+   input [31:0] 			encPad_load;
+   input [31:0] 			encPad_store;
    
    //
    // Internal wires/regs
@@ -136,9 +142,10 @@ module or1200_lsu(
    reg [`OR1200_LSUEA_PRECALC:0] 	dcpu_adr_r;
    reg 					except_align;
 
-
    reg 					sstore_o;
-   
+
+   wire 				xor_stall_load;
+
    //
    // ex_lsu_op
    //
@@ -232,7 +239,7 @@ module or1200_lsu(
 				 .addr(dcpu_adr_o[1:0]),
 				 .lsu_op(ex_lsu_op),
 				 .memdata(dcpu_dat_i),
-				 .regdata(lsu_dataout)
+				 .regdata(lsu_dataout_plain)
 				 );
 
    //
@@ -244,5 +251,27 @@ module or1200_lsu(
 				 .regdata(lsu_datain),
 				 .memdata(dcpu_dat_o)
 				 );
+   
+   wire [31:0] lsu_dataout_plain;
+   reg [31:0] lsu_dataout_cipher;
 
+   assign lsu_dataout = lsu_dataout_plain;
+
+   always @(lsu_dataout or encPad_load or ex_shift_op) begin
+      case (ex_shift_op)
+	
+	`OR1200_SHIFT_BYTE:
+	  lsu_dataout_cipher = {lsu_dataout_plain[31:8], lsu_dataout_plain[7:0] ^ encPad_load[31:24]};
+  
+	`OR1200_SHIFT_HALF_WORD:
+	  lsu_dataout_cipher = {lsu_dataout_plain[31:16], lsu_dataout_plain[15:0] ^ encPad_load[31:16]};
+	
+	`OR1200_SHIFT_WORD:
+	  lsu_dataout_cipher = {lsu_dataout_plain[31:0] ^ encPad_load[31:0]};
+	
+	default: lsu_dataout_cipher = lsu_dataout_plain;
+	
+      endcase
+   end
+   
 endmodule
