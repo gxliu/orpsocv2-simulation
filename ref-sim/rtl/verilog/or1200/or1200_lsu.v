@@ -128,7 +128,7 @@ module or1200_lsu(
    input 				encryption_cycstb;
    input 				xor_stall_load;
 
-   input [4:0] 				ex_shift_op;
+   input [`shift_op_size-1:0] 		ex_shift_op;
    input [31:0] 			encPad_load;
    input [31:0] 			encPad_store;
    
@@ -239,7 +239,8 @@ module or1200_lsu(
 				 .addr(dcpu_adr_o[1:0]),
 				 .lsu_op(ex_lsu_op),
 				 .memdata(dcpu_dat_i),
-				 .regdata(lsu_dataout_plain)
+				 .regdata(dcpu_dat_i_aligned)
+				 //.regdata(lsu_dataout)
 				 );
 
    //
@@ -248,51 +249,36 @@ module or1200_lsu(
    or1200_reg2mem or1200_reg2mem(
 				 .addr(dcpu_adr_o[1:0]),
 				 .lsu_op(ex_lsu_op),
-				 .regdata(lsu_datain_plain),
+				 .regdata(lsu_datain_cipher),
+				 //.regdata(lsu_datain),
 				 .memdata(dcpu_dat_o)
 				 );
+
+   //
+   // data flow:
+   // 1. dcpu_dat_i -> dcpu_dat_i_aligned -> (encrypt) -> 
+   //    (output) lsu_dataout
+   // 2. lsu_datain -> (encrypt) -> lsu_datain_cipher ->
+   //    (output) dcpu_dat_o  
+
+   wire [31:0] dcpu_dat_i_aligned;
+   wire [31:0] lsu_datain_cipher;
+
+   or1200_lsu_encEngine
+     or1200_lsu_store_enc(
+			  .shift_op(ex_shift_op),
+			  .encPad(encPad_store),
+			  .plainIn(lsu_datain),
+			  .cipherOut(lsu_datain_cipher)
+			  );
+
+   or1200_lsu_encEngine
+     or1200_lsu_load_enc(
+			  .shift_op(ex_shift_op),
+			  .encPad(encPad_load),
+			  .plainIn(dcpu_dat_i_aligned),
+			  .cipherOut(lsu_dataout)
+			  );
    
-   wire [31:0] lsu_dataout_plain;
-   reg [31:0] lsu_dataout_cipher;
-
-   wire [31:0] lsu_datain_plain;
-   reg [31:0] lsu_datain_cipher;
-
-   assign lsu_dataout = lsu_dataout_plain;
-   assign lsu_datain_plain = lsu_datain;
-
-   always @(lsu_dataout_plain or encPad_load or ex_shift_op) begin
-      case (ex_shift_op)
-	
-	`OR1200_SHIFT_BYTE_LOAD:
-	  lsu_dataout_cipher = {lsu_dataout_plain[31:8], lsu_dataout_plain[7:0] ^ encPad_load[31:24]};
-  
-	`OR1200_SHIFT_HALF_WORD_LOAD:
-	  lsu_dataout_cipher = {lsu_dataout_plain[31:16], lsu_dataout_plain[15:0] ^ encPad_load[31:16]};
-	
-	`OR1200_SHIFT_WORD_LOAD:
-	  lsu_dataout_cipher = {lsu_dataout_plain[31:0] ^ encPad_load[31:0]};
-	
-	default: lsu_dataout_cipher = lsu_dataout_plain;
-	
-      endcase // case (ex_shift_op)
-   end
-
-   always @(lsu_datain_plain or encPad_store or ex_shift_op) begin
-      case (ex_shift_op)
-
-      	`OR1200_SHIFT_BYTE_STORE:
-	  lsu_datain_cipher = {lsu_datain_plain[31:8], lsu_datain_plain[7:0] ^ encPad_store[31:24]};
-  
-	`OR1200_SHIFT_HALF_WORD_STORE:
-	  lsu_datain_cipher = {lsu_datain_plain[31:16], lsu_datain_plain[15:0] ^ encPad_store[31:16]};
-	
-	`OR1200_SHIFT_WORD_STORE:
-	  lsu_datain_cipher = {lsu_datain_plain[31:0] ^ encPad_store[31:0]};
-
-	default: lsu_datain_cipher = lsu_datain_plain;
-
-      endcase // case (ex_shift_op)
-   end // always @ (lsu_datain_plain or encPad_store or ex_shift_op)
    
 endmodule

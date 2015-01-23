@@ -335,9 +335,6 @@ module or1200_cpu(
    wire 				abort_ex;
    wire 				abort_mvspr;
 
-   wire [31:0] 				dcpu_lsu_o;
-   wire [31:0] 				dcpu_lsu_i;
-
    //
    // Internal wire from or1200_ctrl to encrypion fsm
    //
@@ -650,7 +647,7 @@ module or1200_cpu(
    wire [31:0] 	dcpu_cipher_o;
    wire [31:0] 	dcpu_cipher_i;
 
-   wire [4:0] 	ex_shift_op;
+   wire [`shift_op_size-1:0] ex_shift_op;
 
    wire 	xor_stall_load;
    wire 	xor_stall_store;
@@ -717,9 +714,6 @@ module or1200_cpu(
    // dcpu_lsu_out: output from lsu
    // or1200_encryption takes dcpu_lsu_out as input and output dcpu_cipher_out
    //
-
-   assign dcpu_dat_o = dcpu_lsu_o;
-   assign dcpu_lsu_i = dcpu_dat_i;
    
    //
    // Instantiation of register file
@@ -943,8 +937,8 @@ module or1200_cpu(
 			 .dcpu_we_o(dcpu_we_o),
 			 .dcpu_sel_o(dcpu_sel_o),
 			 .dcpu_tag_o(dcpu_tag_o),
-			 .dcpu_dat_o(dcpu_lsu_o),
-			 .dcpu_dat_i(dcpu_lsu_i),
+			 .dcpu_dat_o(dcpu_dat_o),
+			 .dcpu_dat_i(dcpu_dat_i),
 			 .dcpu_ack_i(dcpu_enc_ack_i),
 			 .dcpu_rty_i(dcpu_enc_rty_i),
 			 .dcpu_err_i(dcpu_err_i),

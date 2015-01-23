@@ -598,6 +598,8 @@
 
 
 
+#define shift_op_size 8
+
 
 /* CypherDB secure instruction */
 

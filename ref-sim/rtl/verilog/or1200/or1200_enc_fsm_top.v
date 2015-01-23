@@ -8,6 +8,14 @@
 // Date:     18 Jan 2015
 //------------------------------
 
+// README:
+// In the current version, the seed instruction has to be issued in advanced (several
+// instructions ahead of the secure store). It is because issuing seed instruction immediately
+// before secure store has to delay the cycstb signal so that the store can occur ONLY AFTER the
+// seed encryption is completed. This delay is not implemented yet. Therefore, issuing it in
+// advance can avoid this problem.
+// It remains a problem to be solved....
+
 `include "or1200_defines.v"
 
 module or1200_enc_fsm_top(
@@ -42,7 +50,7 @@ module or1200_enc_fsm_top(
    input [10:0]  shiftImm;
    input 	 shift_read;
 
-   input [4:0] 	 ex_op;
+   input [`shift_op_size-1:0] ex_op;
 
    // output of shifted encryption pad
    output [31:0] enc_pad_shifted_load;
@@ -113,27 +121,41 @@ module or1200_enc_fsm_top(
 			  .unstall(unstall_store)
 			  );
 
-   assign seedImm_load = (seedImm[10] & seed_read) ? seedImm : 11'b0;
-   assign seedIn_load = (seedImm[10] & seed_read) ? seedIn : 5'b0;
-   assign seedAddr_load = (seedImm[10] & seed_read) ? seedAddr : 5'b0;
+   assign seedImm_load = (!seedImm[10] & seed_read) ? seedImm : 11'b0;
+   assign seedIn_load = (!seedImm[10] & seed_read) ? seedIn : 5'b0;
+   assign seedAddr_load = (!seedImm[10] & seed_read) ? seedAddr : 5'b0;
 
-   assign seedImm_store = (!seedImm[10] & seed_read) ? seedImm : 11'b0;
-   assign seedIn_store = (!seedImm[10] & seed_read) ? seedIn : 5'b0;
-   assign seedAddr_store = (!seedImm[10] & seed_read) ? seedAddr : 5'b0;
-
-   wire [3:0] 	 ex_op_load;
-   wire [3:0] 	 ex_op_store;
+   assign seedImm_store = (seedImm[10] & seed_read) ? seedImm : 11'b0;
+   assign seedIn_store = (seedImm[10] & seed_read) ? seedIn : 5'b0;
+   assign seedAddr_store = (seedImm[10] & seed_read) ? seedAddr : 5'b0;
+   
+   wire [`shift_op_size-1:0] ex_op_load;
+   wire [`shift_op_size-1:0] ex_op_store;
 
    wire 	 shift_read_load;
    wire 	 shift_read_store;
    
    // store the ex_op into two buffers according to the most significant bit
-   assign ex_op_load = ex_op[4] ? 0 : ex_op[3:0];
-   assign ex_op_store = ex_op[4] ? ex_op[3:0] : 0;
+   assign ex_op_load = ex_op[`shift_op_size-1] ? 0 : {1'b0, ex_op[`shift_op_size-2:0]};
+   assign ex_op_store = ex_op[`shift_op_size-1] ? {1'b0, ex_op[`shift_op_size-2:0]} : 0;
 
    assign shift_read_load = shiftImm[10] ? 0 : shift_read;
    assign shift_read_store = shiftImm[10] ? shift_read : 0;
-  
+
+   reg [127:0] 	 enc_pad_load_buf;
+   reg [127:0] 	 enc_pad_store_buf;
+   
+   always @(posedge enc_done_load or `OR1200_RST_EVENT rst)
+     if (rst == `OR1200_RST_VALUE)
+       enc_pad_load_buf <= 0;
+     else enc_pad_load_buf <= enc_pad_load;
+   
+   always @(posedge enc_done_store or `OR1200_RST_EVENT rst)
+     if (rst == `OR1200_RST_VALUE)
+       enc_pad_store_buf <= 0;
+     else enc_pad_store_buf <= enc_pad_store;
+       
+   
    //
    // Instantiation of the encryption pad shifting module
    //
@@ -146,7 +168,7 @@ module or1200_enc_fsm_top(
 		       .shift_rb(shiftRb),
 		       .shift_imm(shiftImm),
 		       .shift_read(shift_read_load),
-		       .enc_pad_in(enc_pad_load),
+		       .enc_pad_in(enc_pad_load_buf),
 		       .to_shift(ex_op_load),
 		       .enc_pad_out(enc_pad_shifted_load),
 		       .ack_i(load_ack_i),
@@ -162,7 +184,7 @@ module or1200_enc_fsm_top(
 			.shift_rb(shiftRb),
 			.shift_imm(shiftImm),
 			.shift_read(shift_read_store),
-			.enc_pad_in(enc_pad_store),
+			.enc_pad_in(enc_pad_store_buf),
 			.to_shift(ex_op_store),
 			.enc_pad_out(enc_pad_shifted_store),
 			.ack_i(store_ack_i),

@@ -737,13 +737,15 @@
 
 // the most significant bit determine load or store instruction
 // load: 0 / store: 1
-`define OR1200_SHIFT_WORD_LOAD	      5'h8
-`define OR1200_SHIFT_HALF_WORD_LOAD   5'h4
-`define OR1200_SHIFT_BYTE_LOAD	      5'h2
+`define shift_op_size 8
 
-`define OR1200_SHIFT_WORD_STORE	      5'h18
-`define OR1200_SHIFT_HALF_WORD_STORE  5'h14
-`define OR1200_SHIFT_BYTE_STORE	      5'h12
+`define OR1200_SHIFT_WORD_LOAD	      8'b00100000
+`define OR1200_SHIFT_HALF_WORD_LOAD   8'b00010000
+`define OR1200_SHIFT_BYTE_LOAD	      8'b00001000
+
+`define OR1200_SHIFT_WORD_STORE	      8'b10100000
+`define OR1200_SHIFT_HALF_WORD_STORE  8'b10010000
+`define OR1200_SHIFT_BYTE_STORE	      8'b10001000
 /* CypherDB secure instruction */
 
 /* */

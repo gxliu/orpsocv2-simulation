@@ -164,7 +164,7 @@ module or1200_ctrl
    output [4:0] 				cypherdb_shift_rb;
    output 					cypherdb_shift_ce;
    
-   output [4:0] 				ex_shift_op;
+   output [`shift_op_size-1:0] 				ex_shift_op;
    
    //
    // Internal wires and regs
@@ -224,7 +224,7 @@ module or1200_ctrl
    wire 					if_seed_op;
    wire 					if_shift_op;
 
-   reg [4:0] 					ex_shift_op;
+   reg [`shift_op_size-1:0] 			ex_shift_op;
  					
   
    //test

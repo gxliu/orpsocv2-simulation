@@ -120,8 +120,9 @@ _regs:
 	l.addi	r16,r15,0x8000
 
 	/* new insn test */
-	l.seed  r4,r3,0x3
-	l.shift r0,r1,0x403
+	/* seed has to loaded in advance for secure store in current prototype */
+	l.seed  r0,r0,0x403
+	l.shift r0,r1,0x401
 	
 	l.sub	r31,r0,r1
 	l.sub	r30,r31,r2
@@ -144,7 +145,7 @@ _regs:
 
 	l.mtspr	r0,r16,0x1234	/* Should be 0xffff0012 */
 
-	l.ssw	0(r31),r16
+	l.sw	0(r31),r16
 
 _mem:	l.movhi	r3,0x1234
 	l.ori	r3,r3,0x5678
@@ -152,8 +153,10 @@ _mem:	l.movhi	r3,0x1234
 	l.ssw	4(r31),r3
 
 	/* new insn test */
-	l.seed	r3,r2,0x403
-	l.shift r0,r1,0x203
+	//l.seed  r0,r0,0x403
+	//l.shift r0,r1,0x401
+	l.seed	r0,r0,0x203
+	l.shift r0,r1,0x201
 	
 	l.slbz	r4,4(r31)
 //	l.slbz  r4,4(r31)
@@ -162,10 +165,6 @@ _mem:	l.movhi	r3,0x1234
 	l.slbz	r4,5(r31)
 	l.add	r8,r8,r4
 	l.ssb	10(r31),r4
-	
-	/* new insn test */
-	l.seed 	r3,r2,0x403
-	l.shift r0,r1,0x203
 	
 	l.slbz	r4,6(r31)
 	l.add	r8,r8,r4
@@ -186,25 +185,33 @@ _mem:	l.movhi	r3,0x1234
         l.lbs   r4,11(r31)
         l.add   r8,r8,r4
         l.sb    4(r31),r4
-*/	
+*/
+
+	/* new insn test */
+	//l.seed  r0,r0,0x403
+	//l.shift r0,r1,0x401
+	l.seed 	r0,r0,0x203
+	l.shift r0,r1,0x201
+		
 	l.slhz   r4,4(r31)
         l.add   r8,r8,r4
-        l.ssh    10(r31),r4
+        l.sh    10(r31),r4
 
-	/* new insn test */	
-	l.seed 	r4,r3,0x403
-	
         l.slhz   r4,6(r31)
         l.add   r8,r8,r4
-        l.ssh    8(r31),r4
-/*
+        l.sh    8(r31),r4
+
 	l.lhs   r4,8(r31)
         l.add   r8,r8,r4
-        l.sh    6(r31),r4
+//        l.sh    6(r31),r4
         l.lhs   r4,10(r31)
         l.add   r8,r8,r4
-        l.sh    4(r31),r4
-*/
+  //      l.sh    4(r31),r4
+
+	/* new insn test */
+	l.seed 	r0,r0,0x203
+	l.shift r0,r1,0x201
+
 	l.slwz	r4,4(r31)
 	l.add   r8,r8,r4
 
